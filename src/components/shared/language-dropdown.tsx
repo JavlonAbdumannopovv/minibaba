@@ -14,7 +14,7 @@ function LanguageDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button size={"icon"}>
+        <Button variant={"outline"} size={"lg"}>
           <Languages />
         </Button>
       </DropdownMenuTrigger>

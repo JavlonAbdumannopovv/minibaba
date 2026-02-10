@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="uz" className={manrope.variable}>
       <head>
-        {/* eslint-disable-next-line @next/next/google-font-display, @next/next/no-page-custom-font */}
+        {/* eslint-disable-next-line @next/next/google-font-display */}
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"

@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const tailwindConfig = {
   content: ["./src/app/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
@@ -15,6 +15,7 @@ export default {
         "text-inverse": "var(--text-inverse)",
 
         border: "var(--border)",
+        "button-hover": "var(--button-hover)",
 
         success: "var(--success)",
         warning: "var(--warning)",
@@ -32,3 +33,5 @@ export default {
   },
   plugins: [],
 };
+
+export default tailwindConfig;
