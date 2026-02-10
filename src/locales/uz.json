@@ -1,0 +1,32 @@
+{
+  "Auth": {
+    "welcome": "Xush kelibsiz!",
+    "login": "Kirish",
+    "emailLabel": "Email manzilingiz",
+    "emailPlaceholder": "your@example.com",
+    "passwordLabel": "Parolni kiriting",
+    "passwordPlaceholder": "********",
+    "login_submit": "Kirish",
+    "login_hint": "Kirish va xaridni davom ettirish",
+    "forgotPassword": "Parolni unutdingizmi?",
+    "submitting": "Yuborilmoqda...",
+    "or": "yoki",
+    "signup": "Ro'yxatdan o'tish",
+    "signup_hint": "Ro'yxatdan o'tish va xaridni davom ettirish",
+    "signup_via_email": "Email orqali ro'yxatdan o'tish",
+    "confirmPasswordLabel": "Parolni tasdiqlang",
+    "passwordRecoveryTitle": "Parolni tiklash",
+    "passwordRecoveryHint": "Email manzilingizni kiriting",
+    "passwordRecoverySentMessage": "Elektron pochtangizga parol yuborildi. Shu parol orqali tizimga kirishingiz mumkin.",
+    "goToLogin": "Tizimga kirish",
+    "send": "Yuborish"
+  },
+  "Header": {
+    "help": "Yordam",
+    "login": "Kirish",
+    "shoppingCart": "Savat",
+    "categories": "Kategoriyalar",
+    "searchPlaceholder": "Mahsulotlarni qidirish...",
+    "search": "Qidirish"
+  }
+}

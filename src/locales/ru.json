@@ -1,0 +1,32 @@
+{
+  "Auth": {
+    "welcome": "Добро пожаловать!",
+    "login": "Войти",
+    "emailLabel": "Ваш email",
+    "emailPlaceholder": "your@example.com",
+    "passwordLabel": "Введите пароль",
+    "passwordPlaceholder": "********",
+    "login_submit": "Войти",
+    "login_hint": "Войдите и продолжите покупки",
+    "forgotPassword": "Забыли пароль?",
+    "submitting": "Отправка...",
+    "or": "или",
+    "signup": "Зарегистрироваться",
+    "signup_hint": "Зарегистрируйтесь и продолжите покупки",
+    "signup_via_email": "Регистрация через email",
+    "confirmPasswordLabel": "Подтвердите пароль",
+    "passwordRecoveryTitle": "Восстановление пароля",
+    "passwordRecoveryHint": "Введите ваш email",
+    "passwordRecoverySentMessage": "Мы отправили пароль на вашу почту. Вы можете войти в систему с этим паролем.",
+    "goToLogin": "Войти в систему",
+    "send": "Отправить"
+  },
+  "Header": {
+    "help": "Помощь",
+    "login": "Войти",
+    "shoppingCart": "Корзина",
+    "categories": "Категории",
+    "searchPlaceholder": "Поиск товаров...",
+    "search": "Поиск"
+  }
+}

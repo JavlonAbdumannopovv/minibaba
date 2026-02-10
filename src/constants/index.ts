@@ -1,8 +1,8 @@
 import { Contact, Home, ListVideo, Rss } from "lucide-react";
 
 export const navLinks = [
-  { route: "all-categories", name: "Kategoriyalar" },
-  { route: "support", name: "Yordam" },
+  { route: "all-categories", name: "categories" },
+  { route: "support", name: "help" },
 ];
 
 export const lngs = [

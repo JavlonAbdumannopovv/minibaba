@@ -1,13 +1,13 @@
-import HomeSearch from "@/app/(lng)/(root)/_components/search";
+import HomeSearch from "@/app/[locale]/(root)/_components/search";
 import LanguageDropdown from "@/components/shared/language-dropdown";
 import Logo from "@/components/shared/logo";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { navLinks } from "@/constants";
 import { AlignCenter } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
-function Mobile() {
+function HeaderMobile() {
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -47,14 +47,16 @@ function Mobile() {
             </span>
           </button>
           {/* Kirish */}
-          <button className="hover:text-primary text-text flex cursor-pointer flex-col items-center gap-0.5 transition-colors">
-            <span className="material-symbols-outlined">person</span>
-            <span className="text-[10px] font-bold">Kirish</span>
-          </button>
+          <Link href="/login">
+            <button className="hover:text-primary text-text flex cursor-pointer flex-col items-center gap-0.5 transition-colors">
+              <span className="material-symbols-outlined">person</span>
+              <span className="text-[10px] font-bold">Kirish</span>
+            </button>
+          </Link>
         </div>
       </SheetContent>
     </Sheet>
   );
 }
 
-export default Mobile;
+export default HeaderMobile;

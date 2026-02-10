@@ -3,16 +3,19 @@
 import { AuthValidation } from "@/validations/auth.validation";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Lock } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import z from "zod";
 import { InputField } from "../_components/input-field";
+import { useTranslations } from "next-intl";
 
 type PasswordRecoveryValues = z.infer<typeof AuthValidation.passwordRecovery>;
 
 const PasswordRecovery = () => {
   const [isSend, setIsSend] = useState(false);
+  const t = useTranslations("Auth");
 
   const {
     register,
@@ -20,9 +23,7 @@ const PasswordRecovery = () => {
     formState: { errors, isSubmitting },
   } = useForm<PasswordRecoveryValues>({
     resolver: zodResolver(AuthValidation.passwordRecovery),
-    defaultValues: {
-      email: "",
-    },
+    defaultValues: { email: "" },
     mode: "onSubmit",
   });
 
@@ -33,47 +34,50 @@ const PasswordRecovery = () => {
 
   return (
     <div className="dark:bg-background-dark/50 border-border bg-surface mx-auto w-full max-w-[440] rounded-xl border p-8 shadow-xl sm:p-10">
-      {/* Parol tiklash sarlavhasi */}
       <div className="mb-8 text-center">
         <div className="mb-6 flex justify-center">
           <div className="bg-primary/10 rounded-full p-3">
             <Lock className="text-primary" />
           </div>
         </div>
-        <h1 className="text-text mb-2 text-3xl font-extrabold tracking-tight">Parolni tiklash</h1>
-        {!isSend && <p className="text-text-muted text-base">Email manzilingizni kiriting</p>}
+
+        <h1 className="text-text mb-2 text-3xl font-extrabold tracking-tight">
+          {t("passwordRecoveryTitle")}
+        </h1>
+
+        {!isSend && <p className="text-text-muted text-base">{t("passwordRecoveryHint")}</p>}
       </div>
-      {/* Parol tiklash formasi */}
+
       {isSend ? (
         <div>
-          <p className="text-text-muted mb-4 text-base">
-            Elektron pochtangizga parol yuborildi. Shu parol orqali tizimga kirishingiz mumkin.
-          </p>
+          <p className="text-text-muted mb-4 text-base">{t("passwordRecoverySentMessage")}</p>
 
           <Link href="/login">
             <button
               className="border-primary text-primary hover:bg-primary/5 flex h-14 w-full cursor-pointer items-center justify-center rounded-lg border-2 text-lg font-bold transition-colors"
               type="button"
             >
-              Tizimga kirish
+              {t("goToLogin")}
             </button>
           </Link>
         </div>
       ) : (
         <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-6">
           <InputField
-            label="Email manzilingiz"
+            label={t("emailLabel")}
             type="email"
-            placeholder="your@example.com"
+            placeholder={t("emailPlaceholder")}
             registration={register("email")}
             error={errors.email}
           />
+
           <div className="space-y-4 pt-2">
             <button
-              className="bg-primary shadow-primary/20 hover:bg-button-hover flex h-14 w-full cursor-pointer items-center justify-center rounded-lg text-lg font-bold text-white shadow-lg transition-colors"
+              className="bg-primary shadow-primary/20 hover:bg-button-hover flex h-14 w-full cursor-pointer items-center justify-center rounded-lg text-lg font-bold text-white shadow-lg transition-colors disabled:opacity-60"
               type="submit"
+              disabled={isSubmitting}
             >
-              Yuborish
+              {isSubmitting ? t("submitting") : t("send")}
             </button>
           </div>
         </form>

@@ -1,12 +1,16 @@
-import { Button } from "@/components/ui/button";
+"use client";
+
 import Logo from "@/components/shared/logo";
 import HomeSearch from "./search";
-import { Link, ShoppingCart, User } from "lucide-react";
 import HomeNavbar from "./navbar";
 import LanguageDropdown from "@/components/shared/language-dropdown";
-import Mobile from "@/components/shared/mobile";
+import HeaderMobile from "@/components/shared/header-mobile";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 function HomeHeader() {
+  const t = useTranslations("Header");
+
   return (
     <header className="border-border bg-surface sticky top-0 z-40 border-b">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 p-3">
@@ -27,22 +31,24 @@ function HomeHeader() {
             {/* Savat */}
             <button className="hover:text-primary relative flex cursor-pointer flex-col items-center gap-0.5 transition-colors">
               <span className="material-symbols-outlined">shopping_cart</span>
-              <span className="text-[10px] font-bold">Savat</span>
+              <span className="text-[10px] font-bold">{t("shoppingCart")}</span>
               {/* Badge */}
               <span className="bg-primary text-text absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full text-[10px] font-bold">
                 0
               </span>
             </button>
             {/* Kirish */}
-            <button className="hover:text-primary text-text flex cursor-pointer flex-col items-center gap-0.5 transition-colors">
-              <span className="material-symbols-outlined">person</span>
-              <span className="text-[10px] font-bold">Kirish</span>
-            </button>
+            <Link href="/login">
+              <button className="hover:text-primary text-text flex cursor-pointer flex-col items-center gap-0.5 transition-colors">
+                <span className="material-symbols-outlined">person</span>
+                <span className="text-[10px] font-bold">{t("login")}</span>
+              </button>
+            </Link>
             {/* Mobile version */}
           </div>
         </div>
         <div className="lg:hidden">
-          <Mobile />
+          <HeaderMobile />
         </div>
       </div>
     </header>
