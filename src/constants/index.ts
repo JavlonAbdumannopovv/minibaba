@@ -1,4 +1,4 @@
-import { Category, HeroSlide } from "@/types";
+import { Category, HeroSlide, Product } from "@/types";
 
 export const navLinks = [
   { route: "all-categories", name: "categories" },
@@ -137,5 +137,104 @@ export const heroSlides: HeroSlide[] = [
     image:
       "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&w=1600&q=80",
     href: "/sellers",
+  },
+];
+
+export const topProducts: Product[] = [
+  {
+    id: "p1",
+    title: "Professional Bluetooth Naushniklar MAX-450",
+    price: 450000,
+    minOrder: 10,
+    discountPercent: 15,
+    image:
+      "https://images.unsplash.com/photo-1612858249937-1cc0852093dd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // headphones
+    verified: true,
+  },
+  {
+    id: "p2",
+    title: "Smartfon uchun Original Zaryadlovchi 33W",
+    price: 89000,
+    minOrder: 20,
+    discountPercent: 10,
+    image:
+      "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80", // charger
+    verified: true,
+  },
+  {
+    id: "p3",
+    title: "USB Type-C Kabel (1.5m) Premium",
+    price: 29000,
+    minOrder: 50,
+    image:
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80", // cable
+    verified: false,
+  },
+  {
+    id: "p4",
+    title: "Erkaklar uchun Hoodie Premium Cotton",
+    price: 249000,
+    minOrder: 10,
+    discountPercent: 12,
+    image:
+      "https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?q=80&w=1072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // hoodie
+    verified: true,
+  },
+  {
+    id: "p5",
+    title: "Ayollar sport krossovkasi (yengil)",
+    price: 399000,
+    minOrder: 8,
+    discountPercent: 8,
+    image:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80", // sneakers
+    verified: false,
+  },
+  {
+    id: "p6",
+    title: "Kichik Blender 2-in-1 (Uy uchun)",
+    price: 319000,
+    minOrder: 6,
+    image:
+      "https://images.unsplash.com/photo-1585237672814-8f85a8118bf6?q=80&w=955&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // blender
+    verified: true,
+  },
+  {
+    id: "p7",
+    title: "LED Stol Chirog‘i (3 rejim) USB",
+    price: 129000,
+    minOrder: 12,
+    discountPercent: 20,
+    image:
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80", // desk lamp
+    verified: true,
+  },
+  {
+    id: "p8",
+    title: "Office Sichqoncha Wireless (2.4G)",
+    price: 79000,
+    minOrder: 15,
+    image:
+      "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // mouse
+    verified: false,
+  },
+  {
+    id: "p9",
+    title: "Bolalar uchun Yumshoq O‘yinchoq (Bear)",
+    price: 99000,
+    minOrder: 10,
+    discountPercent: 5,
+    image:
+      "https://images.unsplash.com/photo-1652501595862-1d06fe543544?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // teddy bear
+    verified: true,
+  },
+  {
+    id: "p10",
+    title: "Kundalik Uy Anjomlari To‘plami (6 dona)",
+    price: 189000,
+    minOrder: 5,
+    image:
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80", // home items
+    verified: true,
   },
 ];

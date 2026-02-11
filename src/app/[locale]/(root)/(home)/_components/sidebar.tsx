@@ -8,7 +8,7 @@ type Props = {
 
 const Sidebar = () => {
   return (
-    <aside className="bg-background col-span-3 hidden rounded-xl border p-4 shadow-sm lg:block">
+    <aside className="bg-background border-border col-span-3 hidden rounded-xl border p-4 shadow-sm lg:block">
       <h3 className="mb-4 flex items-center gap-2 text-lg font-bold">
         <span className="material-symbols-outlined text-primary">menu</span>
         Kategoriyalar

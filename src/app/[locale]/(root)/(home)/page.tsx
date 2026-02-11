@@ -2,6 +2,7 @@
 
 import Hero from "./_components/hero";
 import Sidebar from "./_components/sidebar";
+import TopProductsCarousel from "./_components/top-products-carousel";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
         <Sidebar />
         <Hero />
       </div>
+      <TopProductsCarousel />
     </div>
   );
 };

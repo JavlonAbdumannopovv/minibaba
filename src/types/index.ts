@@ -22,3 +22,13 @@ export type HeroSlide = {
   image: string;
   href: string;
 };
+
+export type Product = {
+  id: string;
+  title: string;
+  price: number;
+  minOrder?: number;
+  discountPercent?: number;
+  image: string;
+  verified?: boolean;
+};

@@ -4,7 +4,6 @@ const Hero = () => {
   return (
     <>
       <HeroBannerSlider />
-      Hero
     </>
   );
 };
