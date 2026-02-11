@@ -4,7 +4,7 @@ import Logo from "@/components/shared/logo";
 import HomeSearch from "./search";
 import HomeNavbar from "./navbar";
 import LanguageDropdown from "@/components/shared/language-dropdown";
-import HeaderMobile from "@/components/shared/header-mobile";
+import HeaderMobile from "@/components/mobile/header-mobile";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 

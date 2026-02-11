@@ -14,6 +14,7 @@ import { lngs } from "@/constants";
 
 import { Link } from "@/i18n/navigation";
 import { usePathname } from "next/navigation";
+import { SheetClose } from "../ui/sheet";
 
 const locales = ["uz", "en", "ru"];
 
