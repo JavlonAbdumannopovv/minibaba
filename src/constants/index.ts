@@ -1,4 +1,4 @@
-import { Category, HeroSlide, Product } from "@/types";
+import { Category, HeroSlide, Product, Seller } from "@/types";
 
 export const navLinks = [
   { route: "all-categories", name: "categories" },
@@ -236,5 +236,75 @@ export const topProducts: Product[] = [
     image:
       "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80", // home items
     verified: true,
+  },
+];
+
+export const verifiedSellers: Seller[] = [
+  {
+    id: "s1",
+    name: "UzTech Electronics",
+    experienceYears: 6,
+    city: "Toshkent",
+    reliabilityPercent: 98,
+    responseSeconds: 24,
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuB0fA_oB6_gGylgl0kP9qDN8Jc2YFg1q3vlKamZUY2q7U5owzOH9L_wkNMD5h2lPnVwxFuFb_s2ZxK5qURDYxUisyzD5tP-eCT13rrec9J81hBXWRnHsB-hnqbQrZQ09h_geqxL4UEdBz99yFoJPOzpl9EM7jEUQJ_yu_ABZWSk9w40gSQ9uAQ_AwSS8B8AkXeurfhNpZzrb7KBS6yK9KusUyTeRc_zdPx8mKY6pDmlFkw90PdmNdCoLKnJIRKrvD_5c2zUIdvPu1w",
+    href: "/sellers/uztech-electronics",
+  },
+  {
+    id: "s2",
+    name: "Global Textile Group",
+    experienceYears: 10,
+    city: "Namangan",
+    reliabilityPercent: 100,
+    responseSeconds: 1,
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuC0CqZbeOwfpv4lBlqiqNNgtsXmgNAXm-shbFRxppQ3UCdQkcgpksC1SdGSP450Tk6xhF1Iz1Ka4cPj3MO2B9wJTXJL9x4721DC-pwpmAvIBhWVPdXs4mkIzqvaG3y_OUjcXRgETSiPRM7bwP22QAa5a4KkruWp8CeLi_ANGPySB02DndP88eql9B2BU59oVVtgYe3PtGOBl0GuNv9mKzHw6k-5DY3cLU9Lav7ijEPsxySSpgwbxitOLRKfiv6U5gljjfR4dbi_09s",
+    href: "/sellers/global-textile-group",
+  },
+  {
+    id: "s3",
+    name: "Stroy-Market UZ",
+    experienceYears: 4,
+    city: "Farg'ona",
+    reliabilityPercent: 95,
+    responseSeconds: 2,
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCvVF0yNFguBWlf1Cw3uZAx0dgVxb3qRYGHoqyLepeg4JV4BB3I-Oy3_rEcscvF5ICAla9Lzlc25YkgjO3sGP4uvfTPdPRTTQYeQSqp4xwAYsbQjFX7bhbNgDwE9URyYb9iF1Kn-ObEhMTHydqvgBu3ew7K6-tECvVY2kphFwr3-B4mNGW7TES8Z8SckqNg9IrYwdeC8LZS03W18o7sf6SThqjp2cKBdP9M3you2lXcF8W897OBM6N_CXQu3VTtD2FMRpQzcS2vk7Q",
+    href: "/sellers/stroy-market-uz",
+  },
+  {
+    id: "s4",
+    name: "Smart Solutions",
+    experienceYears: 2,
+    city: "Buxoro",
+    reliabilityPercent: 92,
+    responseSeconds: 4,
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD0I_oLUmCknSd8lblTLWvYLWuAwME6YUp6WgMTcq6QIOsbjKkGXjSncOjvA2Rxd9-Lm-ZpOdhRUY01KwlfhQ93LpkExR9h7DbUpqkwvWx3kxAxkOW0-U6XXvT8tctTzzA4X03WFURIG8MBWX7vv2CmucHTxbaTpQhD-CZMjFDLJm1Byb3A8YartfYk6f917jyNZcdIQlxK5DDiRKEfM-Gh3VI9VHc2QTpGZOhmPdeU1RFcMe88UciTuxsxcp93ByXRgRRa5mA-0aY",
+    href: "/sellers/smart-solutions",
+  },
+  // qo‘shimcha (carousel uchun)
+  {
+    id: "s5",
+    name: "Fergana Agro Trade",
+    experienceYears: 7,
+    city: "Farg'ona",
+    reliabilityPercent: 97,
+    responseSeconds: 6,
+    image:
+      "https://plus.unsplash.com/premium_photo-1661962692059-55d5a4319814?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    href: "/sellers/fergana-agro-trade",
+  },
+  {
+    id: "s6",
+    name: "Samarkand Home Goods",
+    experienceYears: 5,
+    city: "Samarqand",
+    reliabilityPercent: 94,
+    responseSeconds: 12,
+    image:
+      "https://images.unsplash.com/photo-1733586092622-1b3201e802a5?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    href: "/sellers/samarkand-home-goods",
   },
 ];

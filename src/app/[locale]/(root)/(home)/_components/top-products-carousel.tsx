@@ -18,7 +18,7 @@ import Link from "next/link";
 export default function TopProductsCarousel() {
   const autoplay = useRef(
     Autoplay({
-      delay: 3000, // 3 sekundda bir aylansin
+      delay: 2000, // 3 sekundda bir aylansin
       stopOnInteraction: true, // user bosganda to‘xtasin
       stopOnMouseEnter: true, // hover bo‘lsa to‘xtasin
     }),
@@ -26,10 +26,10 @@ export default function TopProductsCarousel() {
 
   return (
     <section className="space-y-4">
-      <div className="flex flex-col justify-between gap-3 sm:flex-row">
-        <div className="flex gap-2">
-          <ChartLine className="text-red-500" />
-          <h2 className="text-xl font-extrabold">Top mahsulotlar</h2>
+      <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
+        <div className="flex items-center gap-2">
+          <ChartLine className="text-primary" />
+          <h2 className="text-2xl font-extrabold">Top mahsulotlar</h2>
         </div>
         <Link href={"/categories"}>
           <p className="text-primary text-sm font-medium transition duration-500 hover:underline">

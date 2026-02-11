@@ -32,3 +32,14 @@ export type Product = {
   image: string;
   verified?: boolean;
 };
+
+export type Seller = {
+  id: string;
+  name: string;
+  experienceYears: number;
+  city: string;
+  reliabilityPercent: number; // 0-100
+  responseSeconds: number;
+  image: string;
+  href: string;
+};

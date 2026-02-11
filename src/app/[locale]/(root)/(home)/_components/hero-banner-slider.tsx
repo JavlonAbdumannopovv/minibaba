@@ -6,17 +6,30 @@ import Link from "next/link";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import type { CarouselApi } from "@/components/ui/carousel";
 import { heroSlides } from "@/constants";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef, useState } from "react";
 
 export default function HeroBannerSlider() {
-  const [active, setActive] = React.useState(0);
+  const autoplay = useRef(
+    Autoplay({
+      delay: 5000, // 3 sekundda bir aylansin
+      stopOnInteraction: true, // user bosganda to‘xtasin
+      stopOnMouseEnter: true, // hover bo‘lsa to‘xtasin
+    }),
+  );
 
-  const [api, setApi] = React.useState<CarouselApi | null>(null);
+  const [active, setActive] = useState(0);
+
+  const [api, setApi] = useState<CarouselApi | null>(null);
 
   return (
     <div className="col-span-12 lg:col-span-9">
       <div className="bg-primary relative overflow-hidden rounded-xl shadow-lg">
         <Carousel
           opts={{ loop: true }}
+          plugins={[autoplay.current]}
+          onMouseEnter={() => autoplay.current.stop()}
+          onMouseLeave={() => autoplay.current.play()}
           setApi={(a) => {
             setApi(a);
             if (!a) return;
