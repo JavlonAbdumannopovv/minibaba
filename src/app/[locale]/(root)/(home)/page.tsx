@@ -1,5 +1,6 @@
 "use client";
 
+import HomeFooter from "@/components/footers/home-footer";
 import Hero from "./_components/hero";
 import VerifiedSellersCarousel from "./_components/sellers-carousel";
 import Sidebar from "./_components/sidebar";

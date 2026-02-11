@@ -1,4 +1,4 @@
-import { Category, HeroSlide, Product, Seller } from "@/types";
+import { Category, FooterLink, HeroSlide, Product, Seller } from "@/types";
 
 export const navLinks = [
   { route: "all-categories", name: "categories" },
@@ -307,4 +307,24 @@ export const verifiedSellers: Seller[] = [
       "https://images.unsplash.com/photo-1733586092622-1b3201e802a5?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     href: "/sellers/samarkand-home-goods",
   },
+];
+
+export const buyerLinks: FooterLink[] = [
+  { label: "Qanday buyurtma berish", href: "/help/how-to-order" },
+  { label: "To'lov usullari", href: "/help/payment" },
+  { label: "Yetkazib berish", href: "/help/delivery" },
+  { label: "Kafolat va qaytarish", href: "/help/returns" },
+];
+
+export const sellerLinks: FooterLink[] = [
+  { label: "Sotuvchi bo'lish", href: "/seller/apply" },
+  { label: "Sotuvchilar qoidalari", href: "/seller/rules" },
+  { label: "Reklama va marketing", href: "/seller/ads" },
+  { label: "Logistika yordami", href: "/seller/logistics" },
+];
+
+export const socialLinks: FooterLink[] = [
+  { label: "Website", href: "#" },
+  { label: "Email", href: "#" },
+  { label: "Phone", href: "#" },
 ];

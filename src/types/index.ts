@@ -43,3 +43,5 @@ export type Seller = {
   image: string;
   href: string;
 };
+
+export type FooterLink = { label: string; href: string };
