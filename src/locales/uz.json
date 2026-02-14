@@ -28,5 +28,28 @@
     "categories": "Kategoriyalar",
     "searchPlaceholder": "Mahsulotlarni qidirish...",
     "search": "Qidirish"
+  },
+  "Filters": {
+    "price": "Narx",
+    "priceRange": "Narx oralig'i",
+    "min": "Min",
+    "max": "Maks",
+    "reset": "Qayta o'rnatish",
+    "apply": "Qo'llash",
+
+    "moq": "MOQ",
+    "moqTitle": "MOQ (minimal buyurtma)",
+
+    "rating": "Reyting",
+    "ratingTitle": "Minimal reyting",
+    "current": "Hozir",
+
+    "region": "Hudud",
+    "regionsTitle": "Hududlar",
+    "selectedCount": "{count} ta",
+
+    "countSuffix": "ta",
+    "found": "mahsulot topildi",
+    "all": "Hammasi shu"
   }
 }

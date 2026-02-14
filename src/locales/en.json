@@ -28,5 +28,28 @@
     "categories": "Categories",
     "searchPlaceholder": "Search for products...",
     "search": "Search"
+  },
+  "Filters": {
+    "price": "Price",
+    "priceRange": "Price range",
+    "min": "Min",
+    "max": "Max",
+    "reset": "Reset",
+    "apply": "Apply",
+
+    "moq": "MOQ",
+    "moqTitle": "MOQ (minimal buyurtma)",
+
+    "rating": "Rating",
+    "ratingTitle": "Minimal rating",
+    "current": "Current",
+
+    "region": "Region",
+    "regionsTitle": "Regions",
+    "selectedCount": "{count} ta",
+
+    "countSuffix": "",
+    "found": "products found",
+    "all": "All products"
   }
 }

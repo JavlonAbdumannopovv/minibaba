@@ -45,3 +45,21 @@ export type Seller = {
 };
 
 export type FooterLink = { label: string; href: string };
+
+export type Filters = {
+  priceMin: number;
+  priceMax: number;
+  moqMin: number;
+  ratingMin: number; // 0..5
+  regions: string[];
+};
+
+export type ProductList = {
+  id: string;
+  title: string;
+  preview: string;
+  price: number;
+  moq: number;
+  rating: number;
+  region: string;
+};

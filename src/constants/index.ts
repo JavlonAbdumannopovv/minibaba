@@ -1,4 +1,4 @@
-import { Category, FooterLink, HeroSlide, Product, Seller } from "@/types";
+import { Category, FooterLink, HeroSlide, Product, ProductList, Seller } from "@/types";
 
 export const navLinks = [
   { route: "all-categories", name: "categories" },
@@ -327,4 +327,207 @@ export const socialLinks: FooterLink[] = [
   { label: "Website", href: "#" },
   { label: "Email", href: "#" },
   { label: "Phone", href: "#" },
+];
+
+export const productsList: ProductList[] = [
+  {
+    id: "pc-1",
+    title: "Office PC i3 10-gen",
+    preview:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 4500000,
+    moq: 5,
+    rating: 4.2,
+    region: "Toshkent",
+  },
+  {
+    id: "pc-2",
+    title: "Gaming PC Ryzen 5 + RTX 3060",
+    preview:
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 12500000,
+    moq: 1,
+    rating: 4.8,
+    region: "Samarqand",
+  },
+  {
+    id: "pc-3",
+    title: "Office PC i5 11-gen",
+    preview:
+      "https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 6200000,
+    moq: 3,
+    rating: 4.5,
+    region: "Farg'ona",
+  },
+  {
+    id: "pc-4",
+    title: "Gaming PC Ryzen 7 + RTX 3070",
+    preview:
+      "https://images.unsplash.com/photo-1675495277087-10598bf7bcd1?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 16800000,
+    moq: 1,
+    rating: 4.9,
+    region: "Toshkent",
+  },
+  {
+    id: "pc-5",
+    title: "Budget PC Pentium Gold",
+    preview:
+      "https://images.unsplash.com/photo-1617240016072-d92174e44171?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 3200000,
+    moq: 10,
+    rating: 3.9,
+    region: "Andijon",
+  },
+  {
+    id: "pc-6",
+    title: "Office PC Ryzen 3",
+    preview:
+      "https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 4800000,
+    moq: 4,
+    rating: 4.1,
+    region: "Namangan",
+  },
+  {
+    id: "pc-7",
+    title: "Gaming PC i5 + RTX 3050",
+    preview:
+      "https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=1147&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 9800000,
+    moq: 2,
+    rating: 4.4,
+    region: "Buxoro",
+  },
+  {
+    id: "pc-8",
+    title: "Workstation PC Ryzen 9",
+    preview:
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 21000000,
+    moq: 1,
+    rating: 4.7,
+    region: "Toshkent",
+  },
+  {
+    id: "pc-9",
+    title: "Mini PC i3",
+    preview:
+      "https://images.unsplash.com/photo-1662638600476-d563fffbb072?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 3900000,
+    moq: 6,
+    rating: 4.0,
+    region: "Qo'qon",
+  },
+  {
+    id: "pc-10",
+    title: "All-in-One PC i5",
+    preview:
+      "https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 7500000,
+    moq: 2,
+    rating: 4.3,
+    region: "Samarqand",
+  },
+  {
+    id: "pc-11",
+    title: "Office PC i3 10-gen",
+    preview:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 4500000,
+    moq: 5,
+    rating: 4.2,
+    region: "Toshkent",
+  },
+  {
+    id: "pc-12",
+    title: "Gaming PC Ryzen 5 + RTX 3060",
+    preview:
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 12500000,
+    moq: 1,
+    rating: 4.8,
+    region: "Samarqand",
+  },
+  {
+    id: "pc-13",
+    title: "Office PC i5 11-gen",
+    preview:
+      "https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 6200000,
+    moq: 3,
+    rating: 4.5,
+    region: "Farg'ona",
+  },
+  {
+    id: "pc-14",
+    title: "Gaming PC Ryzen 7 + RTX 3070",
+    preview:
+      "https://images.unsplash.com/photo-1675495277087-10598bf7bcd1?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 16800000,
+    moq: 1,
+    rating: 4.9,
+    region: "Toshkent",
+  },
+  {
+    id: "pc-15",
+    title: "Budget PC Pentium Gold",
+    preview:
+      "https://images.unsplash.com/photo-1617240016072-d92174e44171?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 3200000,
+    moq: 10,
+    rating: 3.9,
+    region: "Andijon",
+  },
+  {
+    id: "pc-16",
+    title: "Office PC Ryzen 3",
+    preview:
+      "https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 4800000,
+    moq: 4,
+    rating: 4.1,
+    region: "Namangan",
+  },
+  {
+    id: "pc-17",
+    title: "Gaming PC i5 + RTX 3050",
+    preview:
+      "https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=1147&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 9800000,
+    moq: 2,
+    rating: 4.4,
+    region: "Buxoro",
+  },
+  {
+    id: "pc-18",
+    title: "Workstation PC Ryzen 9",
+    preview:
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 21000000,
+    moq: 1,
+    rating: 4.7,
+    region: "Toshkent",
+  },
+  {
+    id: "pc-19",
+    title: "Mini PC i3",
+    preview:
+      "https://images.unsplash.com/photo-1662638600476-d563fffbb072?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 3900000,
+    moq: 6,
+    rating: 4.0,
+    region: "Qo'qon",
+  },
+  {
+    id: "pc-20",
+    title: "All-in-One PC i5",
+    preview:
+      "https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 7500000,
+    moq: 2,
+    rating: 4.3,
+    region: "Samarqand",
+  },
 ];

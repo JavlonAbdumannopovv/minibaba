@@ -28,5 +28,28 @@
     "categories": "Категории",
     "searchPlaceholder": "Поиск товаров...",
     "search": "Поиск"
+  },
+  "Filters": {
+    "price": "Цена",
+    "priceRange": "Диапазон цен",
+    "min": "Мин",
+    "max": "Макс",
+    "reset": "Сбросить",
+    "apply": "Применить",
+
+    "moq": "MOQ",
+    "moqTitle": "MOQ (минимальный заказ)",
+
+    "rating": "Рейтинг",
+    "ratingTitle": "Минимальный рейтинг",
+    "current": "Текущий",
+
+    "region": "Регион",
+    "regionsTitle": "Регионы",
+    "selectedCount": "{count} ta",
+
+    "countSuffix": "",
+    "found": "товаров найдено",
+    "all": "Все товары"
   }
 }

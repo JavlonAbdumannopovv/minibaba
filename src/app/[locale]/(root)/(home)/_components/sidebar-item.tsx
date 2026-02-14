@@ -55,7 +55,7 @@ const SidebarItem = ({ item }: Props) => {
             {/* hammasi */}
             <li>
               <Link
-                href={`/categories/${item.slug}`}
+                href={`${item.slug}`}
                 className={[
                   "text-muted-foreground block rounded-md px-2 py-1 text-sm transition-colors",
                   "hover:text-primary",
@@ -69,7 +69,7 @@ const SidebarItem = ({ item }: Props) => {
               return (
                 <li key={sub.id}>
                   <Link
-                    href={`/categories/${item.slug}/${sub.slug}`}
+                    href={`${item.slug}/${sub.slug}`}
                     className={[
                       "text-muted-foreground block rounded-md px-2 py-1 text-sm transition-colors",
                       "hover:text-primary",
