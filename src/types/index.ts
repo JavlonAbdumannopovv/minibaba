@@ -54,6 +54,8 @@ export type Filters = {
   regions: string[];
 };
 
+// Product-list item
+
 export type ProductList = {
   id: string;
   title: string;

@@ -51,5 +51,40 @@
     "countSuffix": "ta",
     "found": "mahsulot topildi",
     "all": "Hammasi shu"
+  },
+  "ProductDetail": {
+    "StickyBar": {
+      "totalLabel": "Umumiy miqdor:",
+      "chat": "Chat orqali yozish",
+      "rfq": "RFQ",
+      "addToCart": "Savatga qo'shish"
+    },
+    "Info": {
+      "new": "Yangi mahsulot",
+      "reviews": "{count} ta sharh",
+      "sold": "{count} sotilgan"
+    },
+    "Price": {
+      "title": "Ulgurji narxlar",
+      "popular": "Ommabop"
+    },
+    "Variants": {
+      "title": "Konfiguratsiyani tanlang"
+    },
+    "Supplier": {
+      "verified": "Tasdiqlangan",
+      "viewShop": "Do'konni ko'rish",
+      "experience": "yillik tajriba"
+    },
+    "Tabs": {
+      "description": "Tavsif",
+      "delivery": "Yetkazib berish",
+      "reviews": "Sharhlar",
+      "about": "Mahsulot haqida ma'lumot",
+      "logistics": "Logistika",
+      "fastDelivery": "Tezkor yetkazib berish",
+      "specialPackaging": "Maxsus qadoqlash",
+      "quality": "Sifat nazorati"
+    }
   }
 }

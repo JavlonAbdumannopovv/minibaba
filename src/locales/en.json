@@ -1,24 +1,24 @@
 {
   "Auth": {
     "welcome": "Welcome!",
-    "login": "Log in",
-    "emailLabel": "Email address",
+    "login": "Login",
+    "emailLabel": "Your email",
     "emailPlaceholder": "your@example.com",
-    "passwordLabel": "Password",
+    "passwordLabel": "Enter password",
     "passwordPlaceholder": "********",
-    "login_submit": "Log in",
-    "login_hint": "Log in and continue shopping",
+    "login_submit": "Login",
+    "login_hint": "Login and continue shopping",
     "forgotPassword": "Forgot your password?",
     "submitting": "Submitting...",
     "or": "or",
     "signup": "Sign up",
     "signup_hint": "Sign up and continue shopping",
     "signup_via_email": "Sign up via email",
-    "confirmPasswordLabel": "Confirm Password",
-    "passwordRecoveryTitle": "Password Recovery",
-    "passwordRecoveryHint": "Enter your email address",
-    "passwordRecoverySentMessage": "We have sent a password to your email. You can log in to the system with this password.",
-    "goToLogin": "Log in to the system",
+    "confirmPasswordLabel": "Confirm password",
+    "passwordRecoveryTitle": "Password recovery",
+    "passwordRecoveryHint": "Enter your email",
+    "passwordRecoverySentMessage": "The password has been sent to your email. You can log in using this password.",
+    "goToLogin": "Go to login",
     "send": "Send"
   },
   "Header": {
@@ -26,7 +26,7 @@
     "login": "Login",
     "shoppingCart": "Cart",
     "categories": "Categories",
-    "searchPlaceholder": "Search for products...",
+    "searchPlaceholder": "Search products...",
     "search": "Search"
   },
   "Filters": {
@@ -38,18 +38,53 @@
     "apply": "Apply",
 
     "moq": "MOQ",
-    "moqTitle": "MOQ (minimal buyurtma)",
+    "moqTitle": "MOQ (minimum order)",
 
     "rating": "Rating",
-    "ratingTitle": "Minimal rating",
+    "ratingTitle": "Minimum rating",
     "current": "Current",
 
     "region": "Region",
     "regionsTitle": "Regions",
-    "selectedCount": "{count} ta",
+    "selectedCount": "{count} items",
 
-    "countSuffix": "",
+    "countSuffix": "pcs",
     "found": "products found",
-    "all": "All products"
+    "all": "All"
+  },
+  "ProductDetail": {
+    "StickyBar": {
+      "totalLabel": "Total amount:",
+      "chat": "Chat",
+      "rfq": "RFQ",
+      "addToCart": "Add to cart"
+    },
+    "Info": {
+      "new": "New product",
+      "reviews": "{count} reviews",
+      "sold": "{count} sold"
+    },
+    "Price": {
+      "title": "Wholesale prices",
+      "popular": "Popular"
+    },
+    "Variants": {
+      "title": "Select configuration"
+    },
+    "Supplier": {
+      "verified": "Verified",
+      "viewShop": "View shop",
+      "experience": "years of experience"
+    },
+    "Tabs": {
+      "description": "Description",
+      "delivery": "Delivery",
+      "reviews": "Reviews",
+      "about": "About product",
+      "logistics": "Logistics",
+      "fastDelivery": "Fast delivery",
+      "specialPackaging": "Special packaging",
+      "quality": "Quality control"
+    }
   }
 }

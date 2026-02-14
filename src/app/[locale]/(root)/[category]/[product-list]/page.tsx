@@ -6,7 +6,6 @@ import type { Filters } from "@/types";
 import { productsList } from "@/constants";
 import { ProductListCard } from "@/components/cards/product-list-card";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs";
-import LanguageDropdown from "@/components/shared/language-dropdown";
 import { useTranslations } from "next-intl";
 
 const STEP = 8;
@@ -100,7 +99,7 @@ export default function ProductList() {
   }, [hasMore, filtered.length, hasScrolled]);
 
   return (
-    <div className="mx-auto max-w-7xl py-10">
+    <main className="mx-auto max-w-7xl py-10">
       <Breadcrumbs />
       <FilterBar
         totalFound={filtered.length}
@@ -141,6 +140,6 @@ export default function ProductList() {
           {!hasMore ? `(${t("all")})` : ""}
         </p>
       ) : null}
-    </div>
+    </main>
   );
 }

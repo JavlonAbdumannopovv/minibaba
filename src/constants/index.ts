@@ -531,3 +531,114 @@ export const productsList: ProductList[] = [
     region: "Samarqand",
   },
 ];
+
+export const product = {
+  id: "48293021-X200",
+  isNew: true,
+
+  title: "Mackbook Air 13.3” M2 Chip (2022)",
+
+  images: [
+    "https://plus.unsplash.com/premium_photo-1681302427934-0a3002e398c8?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1718279597963-90e70e1eba23?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1718279602896-6df6c34f61e5?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1718279599787-7ae48695bfd1?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  ],
+
+  rating: 4.8,
+  reviewsCount: 124,
+  soldCountText: "500+ sotilgan",
+
+  pricing: {
+    moq: 2,
+    moqText: "MOQ: 2 dona",
+    tiers: [
+      {
+        label: "1 - 10 dona",
+        price: "$1,200.00",
+      },
+      {
+        label: "11 - 50 dona",
+        price: "$1,050.00",
+        highlight: true,
+        highlightLabel: "Ommabop",
+      },
+      {
+        label: "50+ dona",
+        price: "$890.00",
+      },
+    ],
+  },
+
+  variants: {
+    title: "Konfiguratsiyani tanlang (Variant 5 / 10)",
+    default: "v1",
+    options: [
+      {
+        id: "v1",
+        label: "8gb/256gb Silver",
+        images: [
+          "https://images.unsplash.com/photo-1718279597963-90e70e1eba23?q=80&w=735&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1718279602896-6df6c34f61e5?q=80&w=735&auto=format&fit=crop",
+        ],
+      },
+      {
+        id: "v2",
+        label: "16gb/512gb Space Gray",
+        images: [
+          "https://images.unsplash.com/photo-1718279599787-7ae48695bfd1?q=80&w=735&auto=format&fit=crop",
+          "https://plus.unsplash.com/premium_photo-1681302427934-0a3002e398c8?q=80&w=735&auto=format&fit=crop",
+        ],
+      },
+      {
+        id: "v3",
+        label: "32gb/1tb Gold",
+        images: [
+          "https://plus.unsplash.com/premium_photo-1681302427934-0a3002e398c8?q=80&w=735&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1718279602896-6df6c34f61e5?q=80&w=735&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1718279597963-90e70e1eba23?q=80&w=735&auto=format&fit=crop",
+        ],
+      },
+    ],
+  },
+
+  supplier: {
+    name: "TechnoMach Tashkent MCHJ",
+    logo: "https://lh3.googleusercontent.com/aida-public/AB6AXuC33vllUaItiq9ASIGfm6hjhV5cFlCxHdGlQtNeET7vzIc0esNLw2wUS2ewz9OlkEc8-GzN2AuVniKOr7S8Xc_5dqv16mSoxp1ahlj06V6Bo7GVx06Nr8IKB1qLHXL0OIeHQI4vX1dFFv7oMr9jNHilA9hLVy2RgwFQT0J-NEwo50wpFGxBN38zPCV31g7GiHO1muTac1-F4cFl5gqI8yA1PEuQ0mdGtJxEZ44Kt6zqgEidAOqH9uRpbVOVZ8CY4rZYFLWHZ2l3lTg",
+    verified: true,
+    locationText: "Tashkent, UZ",
+    experienceText: "8 yillik tajriba",
+    shopHref: "/shop/technomach",
+  },
+
+  description: {
+    title: "Mahsulot haqida ma'lumot",
+    text: "Model X200 sanoat konveyer tizimi yuqori yuklamalar ostida ishlashga mo'ljallangan. Uning modulli tuzilishi istalgan ishlab chiqarish liniyasiga oson integratsiya qilish imkonini beradi. Kuchaytirilgan po'lat karkas va energiya tejamkor motorlar uzoq muddatli xizmatni ta'minlaydi.",
+    specs: [
+      { label: "Quvvati", value: "5.5 kW / 7.5 HP" },
+      { label: "Tezligi", value: "0.5 - 2.0 m/s (sozlanuvchi)" },
+      { label: "Yuk ko'tarishi", value: "500 kg / pog'onali metr" },
+      { label: "Kafolat", value: "24 oy zavod kafolati" },
+    ],
+  },
+
+  logistics: {
+    blocks: [
+      {
+        title: "Tezkor yetkazib berish",
+        text: "Toshkent bo'ylab 24 soat ichida. Viloyatlarga 3 ish kunigacha.",
+      },
+      {
+        title: "Maxsus qadoqlash",
+        text: "Eksport sifatidagi yog'och qutilar bilan himoyalangan.",
+      },
+    ],
+    qualityNote: "Har bir uskuna jo'natilishdan oldin 12 soatlik test sinovidan o'tkaziladi.",
+  },
+
+  purchaseBar: {
+    totalLabel: "Umumiy miqdor:",
+    totalPrice: "$1,200.00",
+    moq: 2,
+  },
+};

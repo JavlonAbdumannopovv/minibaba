@@ -27,6 +27,15 @@
 
   --radius: 0.625rem;
 
+  /* hide scrollbar utility */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
   /* Shadcn mapping (shadcn komponentlar shuni ishlatadi) */
   --background: var(--bg);
   --foreground: var(--text);

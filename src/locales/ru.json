@@ -11,14 +11,14 @@
     "forgotPassword": "Забыли пароль?",
     "submitting": "Отправка...",
     "or": "или",
-    "signup": "Зарегистрироваться",
+    "signup": "Регистрация",
     "signup_hint": "Зарегистрируйтесь и продолжите покупки",
     "signup_via_email": "Регистрация через email",
     "confirmPasswordLabel": "Подтвердите пароль",
     "passwordRecoveryTitle": "Восстановление пароля",
     "passwordRecoveryHint": "Введите ваш email",
-    "passwordRecoverySentMessage": "Мы отправили пароль на вашу почту. Вы можете войти в систему с этим паролем.",
-    "goToLogin": "Войти в систему",
+    "passwordRecoverySentMessage": "Пароль отправлен на вашу электронную почту. Вы можете войти, используя этот пароль.",
+    "goToLogin": "Перейти к входу",
     "send": "Отправить"
   },
   "Header": {
@@ -46,10 +46,45 @@
 
     "region": "Регион",
     "regionsTitle": "Регионы",
-    "selectedCount": "{count} ta",
+    "selectedCount": "{count} шт.",
 
-    "countSuffix": "",
-    "found": "товаров найдено",
-    "all": "Все товары"
+    "countSuffix": "шт.",
+    "found": "найдено товаров",
+    "all": "Все"
+  },
+  "ProductDetail": {
+    "StickyBar": {
+      "totalLabel": "Общее количество:",
+      "chat": "Написать в чат",
+      "rfq": "RFQ",
+      "addToCart": "Добавить в корзину"
+    },
+    "Info": {
+      "new": "Новый товар",
+      "reviews": "{count} отзывов",
+      "sold": "{count} продано"
+    },
+    "Price": {
+      "title": "Оптовые цены",
+      "popular": "Популярно"
+    },
+    "Variants": {
+      "title": "Выберите конфигурацию"
+    },
+    "Supplier": {
+      "verified": "Проверенный",
+      "viewShop": "Посмотреть магазин",
+      "experience": "Опыт: лет"
+    },
+    "Tabs": {
+      "description": "Описание",
+      "delivery": "Доставка",
+      "reviews": "Отзывы",
+      "about": "О товаре",
+      "logistics": "Логистика",
+      "fastDelivery": "Быстрая доставка",
+      "specialPackaging": "Специальная упаковка",
+      "quality": "Контроль качества"
+    }
   }
 }
