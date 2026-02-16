@@ -86,5 +86,17 @@
       "specialPackaging": "Special packaging",
       "quality": "Quality control"
     }
+  },
+  "SupplierDetail": {
+    "certificates": "Certificates",
+    "products": "Products",
+    "reviews": "reviews",
+    "sendMessage": "Send message",
+    "follow": "Follow",
+    "location": "Location",
+    "answerDegree": "Answer degree",
+    "noProducts": "No products",
+    "all": "All",
+    "companyAbout": "About company"
   }
 }

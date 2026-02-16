@@ -99,7 +99,7 @@ export default function ProductList() {
   }, [hasMore, filtered.length, hasScrolled]);
 
   return (
-    <main className="mx-auto max-w-7xl py-10">
+    <div>
       <Breadcrumbs />
       <FilterBar
         totalFound={filtered.length}
@@ -140,6 +140,6 @@ export default function ProductList() {
           {!hasMore ? `(${t("all")})` : ""}
         </p>
       ) : null}
-    </main>
+    </div>
   );
 }

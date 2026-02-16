@@ -23,7 +23,7 @@ export default function HeroBannerSlider() {
   const [api, setApi] = useState<CarouselApi | null>(null);
 
   return (
-    <div className="col-span-12 lg:col-span-9">
+    <div className="col-span-12 lg:col-span-12">
       <div className="bg-primary relative overflow-hidden rounded-xl shadow-lg">
         <Carousel
           opts={{ loop: true }}

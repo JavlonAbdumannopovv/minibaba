@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Heart, Star, BadgeCheck } from "lucide-react";
 import type { ProductList } from "@/types";
@@ -8,7 +10,7 @@ type Props = {
   product: ProductList;
 };
 
-export function ProductListCard({ product }: Props) {
+export function SupplierProductCard({ product }: Props) {
   const pathname = usePathname();
   // masalan: /uz/elektronika/kompyuter
 
@@ -37,12 +39,6 @@ export function ProductListCard({ product }: Props) {
 
         {/* Content */}
         <div className="flex flex-1 flex-col gap-2 p-4">
-          {/* Badge */}
-          <div className="bg-primary/10 text-primary flex w-fit items-center gap-1.5 rounded px-2 py-0.5 text-[10px] font-bold tracking-wider uppercase">
-            <BadgeCheck className="h-3 w-3" />
-            Tasdiqlangan sotuvchi
-          </div>
-
           {/* Title */}
           <h3 className="line-clamp-2 text-sm leading-tight font-semibold md:text-base">
             {product.title}
