@@ -1,33 +1,34 @@
 "use client";
 
-import { useState } from "react";
-import { 
-  ChevronDown, ChevronUp, ChevronRight, Laptop, Factory, 
-  Shirt, Home, Car, Heart, Trophy, Wrench, ShieldCheck 
+import { useEffect, useState } from "react";
+import {
+  ChevronDown, ChevronUp, ChevronRight, Laptop, Factory,
+  Shirt, Home, Car, Heart, Trophy, Wrench, ShieldCheck
 } from "lucide-react";
+import { categories} from "@/constants";
+import { Breadcrumbs } from "@/components/shared/breadcrumbs";
+import { number } from "zod";
+import { Category } from "@/types";
 
-const categories = [
-  { id: "electronics", name: "Consumer Electronics", icon: <Laptop className="w-4 h-4" /> },
-  { id: "machinery", name: "Industrial Machinery", icon: <Factory className="w-4 h-4" /> },
-  { id: "apparel", name: "Apparel & Accessories", icon: <Shirt className="w-4 h-4" /> },
-  { id: "home", name: "Home & Garden", icon: <Home className="w-4 h-4" /> },
-  { id: "vehicles", name: "Vehicles & Parts", icon: <Car className="w-4 h-4" /> },
-  { id: "beauty", name: "Beauty & Personal Care", icon: <Heart className="w-4 h-4" /> },
-  { id: "sports", name: "Sports & Entertainment", icon: <Trophy className="w-4 h-4" /> },
-  { id: "tools", name: "Tools & Hardware", icon: <Wrench className="w-4 h-4" /> },
-];
+
+
 
 const SubNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("electronics");
+  const [activeTab, setActiveTab] = useState<number>(categories[0].id);
+  const [activeCat, setActiveCat] = useState<Category>()
 
+  useEffect(()=>{
+    const categorie = categories.find(cat=>cat.id==activeTab)
+    setActiveCat(categorie)
+  }, [activeTab])
   return (
     <>
 
       <div className="relative z-35 flex justify-center items-center  top-0 border-b border-gray-200 bg-white">
         <div className="max-w-7xl w-full h-[49px] px-3 flex justify-between items-center">
           <div className="flex justify-start h-full">
-            <div 
+            <div
               onClick={() => setIsOpen(!isOpen)}
               className="w-[180px] cursor-pointer bg-[#F47B25] text-white flex justify-center items-center h-full font-semibold gap-2 transition-colors"
             >
@@ -47,32 +48,38 @@ const SubNavbar = () => {
         </div>
 
 
-        <div 
-          className={`absolute top-[49px]  left-0 w-full bg-white shadow-xl transition-all duration-300 ease-in-out overflow-hidden ${
-            isOpen ? "max-h-[600px] border-t border-gray-100" : "max-h-0"
-          }`}
+        {/* modal */}
+        <div
+          className={`absolute top-[49px]  left-0 w-full bg-white shadow-xl transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? "max-h-[600px] border-t border-gray-100" : "max-h-0"
+            }`}
         >
           <div className="max-w-7xl px-3 mx-auto flex min-h-[500px] bg-white">
-
+            {/* chap */}
             <div className="w-[280px] border-r border-gray-100 flex flex-col bg-white">
               <div className="flex-1 py-2 overflow-y-auto">
                 {categories.map((cat) => (
                   <div
                     key={cat.id}
-                    onMouseEnter={() => setActiveTab(cat.id)}
-                    className={`flex items-center justify-between px-6 py-3 cursor-pointer transition-colors ${
-                      activeTab === cat.id ? "bg-[#F47B251A] text-[#F47B25] font-bold border-[#F47B25] border-r-4" : "text-[#505050] hover:bg-gray-50"
-                    }`}
+                    onClick={() => setActiveTab(cat.id)}
+                    className={`flex items-center justify-between px-6 py-3 cursor-pointer transition-colors ${activeTab === cat.id ? "bg-[#F47B251A] text-[#F47B25] font-bold border-[#F47B25] border-r-4" : "text-[#505050] hover:bg-gray-50"
+                      }`}
                   >
                     <div className="flex items-center gap-3 text-[14px]">
-                      {cat.icon}
+                      <span
+                        className={[
+                          "material-symbols-outlined text-text-muted transition-colors",
+                          "group-hover:text-primary",
+                        ].join(" ")}
+                      >
+                        {cat.icon}
+                      </span>
                       {cat.name}
                     </div>
-                   
+
                   </div>
                 ))}
               </div>
-              
+
 
               <div className="p-6 border-t border-blue-50 bg-[#F7FAFC]">
                 <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-4">Quick Links</p>
@@ -85,54 +92,48 @@ const SubNavbar = () => {
             </div>
 
 
-            <div className="flex-1 p-10 grid grid-cols-12 gap-8">
-               <div className="col-span-8 grid grid-cols-2 gap-x-12">
-                  <div>
-                    <h3 className="font-bold text-[16px] text-[#1C1C1C] border-b-2 border-[#1C1C1C] inline-block pb-1 mb-8 uppercase">Laptops & Computers</h3>
-                    <div className="space-y-8">
-                       {[1, 2, 3].map(i => (
-                         <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                            <div className="w-14 h-14 bg-[#F4F4F4] rounded-lg flex items-center justify-center">💻</div>
-                            <div>
-                               <p className="text-[14px] font-bold group-hover:text-blue-600">Professional Laptops</p>
-                               <p className="text-[12px] text-gray-400">1.2k+ Products</p>
-                            </div>
-                         </div>
-                       ))}
-                    </div>
+            {/* O'ng taraf */}
+            <div className="flex-1 p-8 bg-white">
+              {/* Sarlavha qismi */}
+              <div className="mb-4">
+                <h2 className="text-[36px] font-bold text-[#111827]">
+                  {activeCat?.name}
+                </h2>
+                <p className="text-[#6B7280] mt-2">
+                  Ushbu bo'limda siz ulgurji narxlarda eng so'nggi texnologik uskunalarni topishingiz mumkin.
+                </p>
+              </div>
+                {/* Bu yerda misol tariqasida faqat bitta blok (Elektronika ichidagi sub-bloklar) keltirilgan */}
+                <div className="bg-[#F9FAFB] border border-gray-100 rounded-2xl p-6">
+                  <div className="flex justify-between items-center mb-6">
+                    <h3 className="text-xl font-bold text-[#111827]">
+                      {activeCat?.name} {/* Masalan: Smartfonlar va gadjetlar */}
+                    </h3>
+                    <button className="text-[#FF7010] font-medium hover:underline">
+                      Hammasi
+                    </button>
                   </div>
-                  <div className="border-l border-gray-100 border-dashed pl-12">
-                    <h3 className="font-bold text-[16px] text-[#1C1C1C] border-b-2 border-[#1C1C1C] inline-block pb-1 mb-8 uppercase">Mobile Electronics</h3>
-                    <div className="space-y-8">
-                       {[1, 2, 3].map(i => (
-                         <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                            <div className="w-14 h-14 bg-[#F4F4F4] rounded-lg flex items-center justify-center">📱</div>
-                            <div>
-                               <p className="text-[14px] font-bold group-hover:text-blue-600">Smartphones</p>
-                               <p className="text-[12px] text-gray-400">5.6k+ Products</p>
-                            </div>
-                         </div>
-                       ))}
-                    </div>
-                  </div>
-               </div>
 
-
-               <div className="col-span-4 space-y-6">
-                  <div className="bg-[#E5F1FF] p-6 rounded-xl border border-blue-100">
-                    <span className="bg-[#00D1FF] text-white text-[10px] px-2 py-0.5 rounded font-bold uppercase">Hot Deal</span>
-                    <h4 className="mt-4 font-bold text-[18px]">Next-Gen Audio Technology</h4>
-                    <p className="text-[12px] text-gray-500 mt-2 mb-6">30% Bulk Discount from factories.</p>
-                    <button className="bg-[#1C1C1C] text-white text-[13px] px-6 py-2 rounded-lg font-bold">Source Now</button>
+                  <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
+                    {activeCat?.subCategories.map((sub, index) => (
+                      <div key={index} className="flex flex-col items-center min-w-[120px] group cursor-pointer">
+                        {/* Rasm konteyneri */}
+                        <div className="w-[120px] h-[120px] bg-white rounded-xl border border-gray-100 p-2 flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
+                          <img
+                            src={sub.image}
+                            alt={sub.name}
+                            className="w-full h-full object-cover rounded-lg"
+                          />
+                        </div>
+                        {/* Sub-category nomi */}
+                        <div className="mt-3 text-center text-[14px] text-[#374151] font-medium leading-tight px-1">
+                          {sub.name}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  <div className="bg-[#212121] p-6 rounded-xl text-white">
-                    <h4 className="font-bold text-[16px] mb-4 text-blue-400">Verified Suppliers</h4>
-                    <div className="space-y-3 text-[13px]">
-                       <div className="flex items-center gap-2"><ShieldCheck className="w-4 h-4" /> Factory Inspected</div>
-                       <div className="flex items-center gap-2"><ShieldCheck className="w-4 h-4" /> Fast Shipping</div>
-                    </div>
-                  </div>
-               </div>
+                </div>
+          
             </div>
           </div>
         </div>
@@ -140,7 +141,7 @@ const SubNavbar = () => {
 
 
       {isOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/50 z-30 transition-opacity duration-300"
           onClick={() => setIsOpen(false)}
         />

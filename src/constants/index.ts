@@ -11,6 +11,105 @@ export const lngs = [
   { route: "ru", label: "Русский" },
 ];
 
+// export const categories: Category[] = [
+//   {
+//     id: 1,
+//     name: "Elektronika",
+//     slug: "elektronika",
+//     icon: "devices",
+//     subCategories: [
+//       { id: 1, name: "Smartfonlar va Gadjetlar", slug: "smartfonlar" },
+//       { id: 2, name: "Kompyuter texnikasi", slug: "kompyuter" },
+//       { id: 3, name: "Maishiy texnika", slug: "maishiy-texnika" },
+//       { id: 4, name: "Foto va video", slug: "foto-video" },
+//     ],
+//   },
+//   {
+//     id: 2,
+//     name: "Kiyim-kechak",
+//     slug: "kiyim-kechak",
+//     icon: "apparel",
+//     subCategories: [
+//       { id: 1, name: "Ayollar kiyimlari", slug: "ayollar-kiyimlari" },
+//       { id: 2, name: "Erkaklar kiyimlari", slug: "erkaklar-kiyimlari" },
+//       { id: 3, name: "Bolalar kiyimlari", slug: "bolalar-kiyimlari" },
+//       { id: 4, name: "Poyabzallar", slug: "poyabzallar" },
+//     ],
+//   },
+//   {
+//     id: 3,
+//     name: "Qurilish mollari",
+//     slug: "qurilish-mollari",
+//     icon: "construction",
+//     subCategories: [
+//       { id: 1, name: "Qurilish materiallari", slug: "qurilish-materiallari" },
+//       { id: 2, name: "Qurilish asboblari", slug: "qurilish-asboblari" },
+//       { id: 3, name: "Qurilish texnikasi", slug: "qurilish-texnikasi" },
+//       { id: 4, name: "Qurilish xizmatlari", slug: "qurilish-xizmatlari" },
+//     ],
+//   },
+//   {
+//     id: 4,
+//     name: "Ulgurji oziq-ovqat",
+//     slug: "ulgurji-oziq-ovqat",
+//     icon: "inventory_2",
+//     subCategories: [
+//       { id: 1, name: "Meva va sabzavotlar", slug: "meva-sabzavotlar" },
+//       { id: 2, name: "Go'sht va baliq", slug: "gosht-baliq" },
+//       { id: 3, name: "Sut mahsulotlari", slug: "sut-mahsulotlari" },
+//       { id: 4, name: "Non va qandolat", slug: "non-qandolat" },
+//     ],
+//   },
+//   {
+//     id: 5,
+//     name: "Avtomobil va transport",
+//     slug: "avtomobil-transport",
+//     icon: "directions_car",
+//     subCategories: [
+//       { id: 1, name: "Yengil avtomobillar", slug: "yengil-avtomobillar" },
+//       { id: 2, name: "Yuk avtomobillari", slug: "yuk-avtomobillari" },
+//       { id: 3, name: "Mototsikllar", slug: "mototsikllar" },
+//       { id: 4, name: "Transport xizmatlari", slug: "transport-xizmatlari" },
+//     ],
+//   },
+//   {
+//     id: 6,
+//     name: "Uy buyumlari",
+//     slug: "uy-buyumlari",
+//     icon: "home",
+//     subCategories: [
+//       { id: 1, name: "Mebel", slug: "mebel" },
+//       { id: 2, name: "Uy anjomlari", slug: "uy-anjomlari" },
+//       { id: 3, name: "Uy dekoratsiyasi", slug: "uy-dekoratsiyasi" },
+//       { id: 4, name: "Uy xizmatlari", slug: "uy-xizmatlari" },
+//     ],
+//   },
+//   {
+//     id: 7,
+//     name: "Bolalar uchun",
+//     slug: "bolalar-uchun",
+//     icon: "child_friendly",
+//     subCategories: [
+//       { id: 1, name: "O'yinchoqlar", slug: "oyinchoqlar" },
+//       { id: 2, name: "Bolalar kiyimlari", slug: "bolalar-kiyimlari" },
+//       { id: 3, name: "Bolalar poyabzallari", slug: "bolalar-poyabzallari" },
+//       { id: 4, name: "Bolalar mebellari", slug: "bolalar-mebellari" },
+//     ],
+//   },
+//   {
+//     id: 8,
+//     name: "Go'zallik va sog'liq",
+//     slug: "gozallik-sogliq",
+//     icon: "spa",
+//     subCategories: [
+//       { id: 1, name: "Go'zallik mahsulotlari", slug: "gozallik-mahsulotlari" },
+//       { id: 2, name: "Sog'liq uchun mahsulotlar", slug: "sogliq-mahsulotlari" },
+//       { id: 3, name: "Parfyumeriya", slug: "parfyumeriya" },
+//       { id: 4, name: "Fitness va sport", slug: "fitness-sport" },
+//     ],
+//   },
+// ];
+
 export const categories: Category[] = [
   {
     id: 1,
@@ -18,10 +117,10 @@ export const categories: Category[] = [
     slug: "elektronika",
     icon: "devices",
     subCategories: [
-      { id: 1, name: "Smartfonlar va Gadjetlar", slug: "smartfonlar" },
-      { id: 2, name: "Kompyuter texnikasi", slug: "kompyuter" },
-      { id: 3, name: "Maishiy texnika", slug: "maishiy-texnika" },
-      { id: 4, name: "Foto va video", slug: "foto-video" },
+      { id: 1, name: "Smartfonlar va Gadjetlar", slug: "smartfonlar", image: "https://images.unsplash.com/photo-1702390740712-ce6daf1673be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { id: 2, name: "Kompyuter texnikasi", slug: "kompyuter", image: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=800&auto=format&fit=crop" },
+      { id: 3, name: "Maishiy texnika", slug: "maishiy-texnika", image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop" },
+      { id: 4, name: "Foto va video", slug: "foto-video", image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=800&auto=format&fit=crop" },
     ],
   },
   {
@@ -30,10 +129,10 @@ export const categories: Category[] = [
     slug: "kiyim-kechak",
     icon: "apparel",
     subCategories: [
-      { id: 1, name: "Ayollar kiyimlari", slug: "ayollar-kiyimlari" },
-      { id: 2, name: "Erkaklar kiyimlari", slug: "erkaklar-kiyimlari" },
-      { id: 3, name: "Bolalar kiyimlari", slug: "bolalar-kiyimlari" },
-      { id: 4, name: "Poyabzallar", slug: "poyabzallar" },
+      { id: 1, name: "Ayollar kiyimlari", slug: "ayollar-kiyimlari", image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=800&auto=format&fit=crop" },
+      { id: 2, name: "Erkaklar kiyimlari", slug: "erkaklar-kiyimlari", image: "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?q=80&w=800&auto=format&fit=crop" },
+      { id: 3, name: "Bolalar kiyimlari", slug: "bolalar-kiyimlari", image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?q=80&w=800&auto=format&fit=crop" },
+      { id: 4, name: "Poyabzallar", slug: "poyabzallar", image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=800&auto=format&fit=crop" },
     ],
   },
   {
@@ -42,10 +141,10 @@ export const categories: Category[] = [
     slug: "qurilish-mollari",
     icon: "construction",
     subCategories: [
-      { id: 1, name: "Qurilish materiallari", slug: "qurilish-materiallari" },
-      { id: 2, name: "Qurilish asboblari", slug: "qurilish-asboblari" },
-      { id: 3, name: "Qurilish texnikasi", slug: "qurilish-texnikasi" },
-      { id: 4, name: "Qurilish xizmatlari", slug: "qurilish-xizmatlari" },
+      { id: 1, name: "Qurilish materiallari", slug: "qurilish-materiallari", image: "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=800&auto=format&fit=crop" },
+      { id: 2, name: "Qurilish asboblari", slug: "qurilish-asboblari", image: "https://images.unsplash.com/photo-1530124566582-a618bc2615ad?q=80&w=800&auto=format&fit=crop" },
+      { id: 3, name: "Qurilish texnikasi", slug: "qurilish-texnikasi", image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=800&auto=format&fit=crop" },
+      { id: 4, name: "Qurilish xizmatlari", slug: "qurilish-xizmatlari", image: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=800&auto=format&fit=crop" },
     ],
   },
   {
@@ -54,10 +153,10 @@ export const categories: Category[] = [
     slug: "ulgurji-oziq-ovqat",
     icon: "inventory_2",
     subCategories: [
-      { id: 1, name: "Meva va sabzavotlar", slug: "meva-sabzavotlar" },
-      { id: 2, name: "Go'sht va baliq", slug: "gosht-baliq" },
-      { id: 3, name: "Sut mahsulotlari", slug: "sut-mahsulotlari" },
-      { id: 4, name: "Non va qandolat", slug: "non-qandolat" },
+      { id: 1, name: "Meva va sabzavotlar", slug: "meva-sabzavotlar", image: "https://images.unsplash.com/photo-1610348725531-843dff563e2c?q=80&w=800&auto=format&fit=crop" },
+      { id: 2, name: "Go'sht va baliq", slug: "gosht-baliq", image: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" },
+      { id: 3, name: "Sut mahsulotlari", slug: "sut-mahsulotlari", image: "https://images.unsplash.com/photo-1528750951167-a3e2483f4971?q=80&w=800&auto=format&fit=crop" },
+      { id: 4, name: "Non va qandolat", slug: "non-qandolat", image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=800&auto=format&fit=crop" },
     ],
   },
   {
@@ -66,10 +165,10 @@ export const categories: Category[] = [
     slug: "avtomobil-transport",
     icon: "directions_car",
     subCategories: [
-      { id: 1, name: "Yengil avtomobillar", slug: "yengil-avtomobillar" },
-      { id: 2, name: "Yuk avtomobillari", slug: "yuk-avtomobillari" },
-      { id: 3, name: "Mototsikllar", slug: "mototsikllar" },
-      { id: 4, name: "Transport xizmatlari", slug: "transport-xizmatlari" },
+      { id: 1, name: "Yengil avtomobillar", slug: "yengil-avtomobillar", image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop" },
+      { id: 2, name: "Yuk avtomobillari", slug: "yuk-avtomobillari", image: "https://images.unsplash.com/photo-1586191121278-2207506d0493?q=80&w=800&auto=format&fit=crop" },
+      { id: 3, name: "Mototsikllar", slug: "mototsikllar", image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop" },
+      { id: 4, name: "Transport xizmatlari", slug: "transport-xizmatlari", image: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?q=80&w=800&auto=format&fit=crop" },
     ],
   },
   {
@@ -78,10 +177,10 @@ export const categories: Category[] = [
     slug: "uy-buyumlari",
     icon: "home",
     subCategories: [
-      { id: 1, name: "Mebel", slug: "mebel" },
-      { id: 2, name: "Uy anjomlari", slug: "uy-anjomlari" },
-      { id: 3, name: "Uy dekoratsiyasi", slug: "uy-dekoratsiyasi" },
-      { id: 4, name: "Uy xizmatlari", slug: "uy-xizmatlari" },
+      { id: 1, name: "Mebel", slug: "mebel", image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop" },
+      { id: 2, name: "Uy anjomlari", slug: "uy-anjomlari", image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=800&auto=format&fit=crop" },
+      { id: 3, name: "Uy dekoratsiyasi", slug: "uy-dekoratsiyasi", image: "https://images.unsplash.com/photo-1534349762230-e0cadf78f5db?q=80&w=800&auto=format&fit=crop" },
+      { id: 4, name: "Uy xizmatlari", slug: "uy-xizmatlari", image: "https://images.unsplash.com/photo-1581578731522-65239f1396b2?q=80&w=800&auto=format&fit=crop" },
     ],
   },
   {
@@ -90,10 +189,10 @@ export const categories: Category[] = [
     slug: "bolalar-uchun",
     icon: "child_friendly",
     subCategories: [
-      { id: 1, name: "O'yinchoqlar", slug: "oyinchoqlar" },
-      { id: 2, name: "Bolalar kiyimlari", slug: "bolalar-kiyimlari" },
-      { id: 3, name: "Bolalar poyabzallari", slug: "bolalar-poyabzallari" },
-      { id: 4, name: "Bolalar mebellari", slug: "bolalar-mebellari" },
+      { id: 1, name: "O'yinchoqlar", slug: "oyinchoqlar", image: "https://images.unsplash.com/photo-1533560904424-a0c61dc306fc?q=80&w=800&auto=format&fit=crop" },
+      { id: 2, name: "Bolalar kiyimlari", slug: "bolalar-kiyimlari-v2", image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=800&auto=format&fit=crop" },
+      { id: 3, name: "Bolalar poyabzallari", slug: "bolalar-poyabzallari", image: "https://images.unsplash.com/photo-1533512930330-4ac257c86793?q=80&w=800&auto=format&fit=crop" },
+      { id: 4, name: "Bolalar mebellari", slug: "bolalar-mebellari", image: "https://images.unsplash.com/photo-1519340333755-50721343aa2a?q=80&w=800&auto=format&fit=crop" },
     ],
   },
   {
@@ -102,10 +201,10 @@ export const categories: Category[] = [
     slug: "gozallik-sogliq",
     icon: "spa",
     subCategories: [
-      { id: 1, name: "Go'zallik mahsulotlari", slug: "gozallik-mahsulotlari" },
-      { id: 2, name: "Sog'liq uchun mahsulotlar", slug: "sogliq-mahsulotlari" },
-      { id: 3, name: "Parfyumeriya", slug: "parfyumeriya" },
-      { id: 4, name: "Fitness va sport", slug: "fitness-sport" },
+      { id: 1, name: "Go'zallik mahsulotlari", slug: "gozallik-mahsulotlari", image: "https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?q=80&w=800&auto=format&fit=crop" },
+      { id: 2, name: "Sog'liq uchun mahsulotlar", slug: "sogliq-mahsulotlari", image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop" },
+      { id: 3, name: "Parfyumeriya", slug: "parfyumeriya", image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=800&auto=format&fit=crop" },
+      { id: 4, name: "Fitness va sport", slug: "fitness-sport", image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop" },
     ],
   },
 ];

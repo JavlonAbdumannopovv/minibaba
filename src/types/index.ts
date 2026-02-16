@@ -4,7 +4,7 @@ export interface ChildProps {
   children: ReactNode;
 }
 
-export type SubCategory = { id: number; name: string; slug: string };
+export type SubCategory = { id: number; name: string; slug: string; image: string; };
 
 export type Category = {
   id: number;
