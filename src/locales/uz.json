@@ -86,5 +86,17 @@
       "specialPackaging": "Maxsus qadoqlash",
       "quality": "Sifat nazorati"
     }
+  },
+  "SupplierDetail": {
+    "certificates": "Sertifikatlar",
+    "products": "Mahsulotlar",
+    "reviews": "ta sharhlar",
+    "sendMessage": "Xabar yuborish",
+    "follow": "Kuzatish",
+    "location": "Joylashuv",
+    "answerDegree": "Javob darajasi",
+    "noProducts": "Mahsulot yo'q",
+    "all": "Hammasi shu",
+    "companyAbout": "Kompaniya haqida"
   }
 }

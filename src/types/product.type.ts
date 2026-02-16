@@ -30,6 +30,10 @@ export interface Supplier {
   locationText: string;
   experienceText: string;
   shopHref: string;
+  rating: number;
+  reviewCount: number;
+  replyRate: number;
+  description: string;
 }
 
 // Description
@@ -45,7 +49,7 @@ export interface Review {
   date: string;
   rating: number;
   text: string;
-};
+}
 
 // Description
 

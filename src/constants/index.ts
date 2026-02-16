@@ -708,6 +708,11 @@ export const product = {
     locationText: "Tashkent, UZ",
     experienceText: "8 yillik tajriba",
     shopHref: "/shop/technomach",
+    rating: 4.9,
+    reviewCount: 256,
+    replyRate: 98,
+    description:
+      "TechnoMach Tashkent MCHJ - bu O'zbekistonda joylashgan, sanoat uskunalari va texnologik echimlar bo'yicha ixtisoslashgan yetkazib beruvchi. 8 yillik tajribaga ega bo'lgan kompaniya, mijozlarga yuqori sifatli mahsulotlar va ishonchli xizmat ko'rsatishga intiladi. TechnoMach, sanoat konveyer tizimlari, avtomatlashtirilgan ishlab chiqarish liniyalari va boshqa texnologik echimlarni taqdim etadi, bu esa mijozlarning ishlab chiqarish jarayonlarini optimallashtirishga yordam beradi. Kompaniya o'zining yuqori reytingi, ko'plab ijobiy sharhlari va tezkor javob berish qobiliyati bilan tanilgan. TechnoMach, mijozlarining ehtiyojlarini tushunishga va ularga mos echimlarni taklif qilishga katta e'tibor beradi, bu esa ularni O'zbekistondagi sanoat uskunalari bozorida ishonchli hamkor sifatida ajratib turadi.",
   },
 
   description: {

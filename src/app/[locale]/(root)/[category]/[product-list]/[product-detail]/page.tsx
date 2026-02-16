@@ -33,9 +33,8 @@ export default function ProductDetailsPage() {
   };
 
   return (
-    <main>
-      <div className="mx-auto w-full max-w-7xl px-6 py-6 pb-24">
-        <LanguageDropdown />
+    <>
+      <div>
         <Breadcrumbs />
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
@@ -88,6 +87,6 @@ export default function ProductDetailsPage() {
         onRfq={handleRfq}
         onAddToCart={handleAddToCart}
       />
-    </main>
+    </>
   );
 }

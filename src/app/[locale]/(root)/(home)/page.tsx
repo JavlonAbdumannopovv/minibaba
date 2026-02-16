@@ -1,16 +1,15 @@
 "use client";
 
-import HomeFooter from "@/components/footers/home-footer";
 import Hero from "./_components/hero";
 import VerifiedSellersCarousel from "./_components/sellers-carousel";
-import Sidebar from "./_components/sidebar";
+// import Sidebar from "./_components/sidebar";
 import TopProductsCarousel from "./_components/top-products-carousel";
 
 const HomePage = () => {
   return (
     <div className="flex flex-col gap-10">
       <div className="grid grid-cols-12 gap-6">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Hero />
       </div>
       <TopProductsCarousel />
