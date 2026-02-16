@@ -41,9 +41,9 @@ const SubNavbar = () => {
               {isOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
             </div>
 
-            <div className="px-6 flex justify-center items-center h-full text-[14px] font-medium text-[#1C1C1C] hover:text-[#F47B25] cursor-pointer">Ready to Ship</div>
-            <div className="px-6 flex justify-center items-center h-full text-[14px] font-medium text-[#1C1C1C] hover:text-[#F47B25] cursor-pointer">Personal Protective Equipment</div>
-            <div className="px-6 flex justify-center items-center h-full text-[14px] font-medium text-[#1C1C1C] hover:text-[#F47B25] cursor-pointer">Trade Assurance</div>
+            <div className="px-6  hidden md:flex  justify-center items-center h-full text-[14px] font-medium text-[#1C1C1C] hover:text-[#F47B25] cursor-pointer">Ready to Ship</div>
+            <div className="px-6  hidden md:flex  justify-center items-center h-full text-[14px] font-medium text-[#1C1C1C] hover:text-[#F47B25] cursor-pointer">Personal Protective Equipment</div>
+            <div className="px-6  hidden md:flex  justify-center items-center h-full text-[14px] font-medium text-[#1C1C1C] hover:text-[#F47B25] cursor-pointer">Trade Assurance</div>
           </div>
         </div>
 
