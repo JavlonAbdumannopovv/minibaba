@@ -1,4 +1,4 @@
-import { Category, FooterLink, HeroSlide, Product, ProductList, Seller } from "@/types";
+import { Category, Chat, FooterLink, HeroSlide, Product, ProductList, Seller } from "@/types";
 
 export const navLinks = [
   { route: "all-categories", name: "categories" },
@@ -406,6 +406,29 @@ export const verifiedSellers: Seller[] = [
       "https://images.unsplash.com/photo-1733586092622-1b3201e802a5?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     href: "/sellers/samarkand-home-goods",
   },
+];
+
+
+
+
+
+export const initialChats: Chat[] = [
+  {
+    id: "chat_1",
+    sellerId: "s1", // verifiedSellers ichidagi seller ID-si bilan bir xil bo'lishi kerak
+    lastMessage: "Sizga yangi xabar keldi...",
+    time: "10:45 PM",
+    messages: [
+      { id: "m1", text: "Assalomu alaykum", sender: 'me', timestamp: "10:40 PM" }
+    ]
+  },
+  {
+    id: "chat_2",
+    sellerId: "s2",
+    lastMessage: "Buyurtmangiz yo'lga chiqdi.",
+    time: "09:20 AM",
+    messages: []
+  }
 ];
 
 export const buyerLinks: FooterLink[] = [

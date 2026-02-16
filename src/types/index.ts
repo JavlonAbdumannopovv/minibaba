@@ -33,6 +33,21 @@ export type Product = {
   verified?: boolean;
 };
 
+export type Message = {
+    id: string;
+    text: string;
+    sender: 'me' | 'seller';
+    timestamp: string;
+};
+
+export type Chat = {
+    id: string;
+    sellerId: string; 
+    lastMessage: string;
+    time: string;
+    messages: Message[];
+};
+
 export type Seller = {
   id: string;
   name: string;
@@ -43,6 +58,8 @@ export type Seller = {
   image: string;
   href: string;
 };
+
+
 
 export type FooterLink = { label: string; href: string };
 
