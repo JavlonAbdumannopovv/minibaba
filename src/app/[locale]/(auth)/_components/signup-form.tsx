@@ -7,7 +7,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
 import { useForm } from "react-hook-form";
-import { InputField } from "./input-field";
+import { InputField } from "../../../../components/fields/input-field";
 import z from "zod";
 
 type SignUpValues = z.infer<typeof AuthValidation.signUpSchema>;

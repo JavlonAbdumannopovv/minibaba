@@ -8,7 +8,7 @@ import { Link } from "@/i18n/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import z from "zod";
-import { InputField } from "../_components/input-field";
+import { InputField } from "../../../../components/fields/input-field";
 import { useTranslations } from "next-intl";
 
 type PasswordRecoveryValues = z.infer<typeof AuthValidation.passwordRecovery>;

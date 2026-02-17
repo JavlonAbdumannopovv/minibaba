@@ -4,7 +4,7 @@ export interface ChildProps {
   children: ReactNode;
 }
 
-export type SubCategory = { id: number; name: string; slug: string; image: string; };
+export type SubCategory = { id: number; name: string; slug: string; image: string };
 
 export type Category = {
   id: number;
@@ -34,18 +34,18 @@ export type Product = {
 };
 
 export type Message = {
-    id: string;
-    text: string;
-    sender: 'me' | 'seller';
-    timestamp: string;
+  id: string;
+  text: string;
+  sender: "me" | "seller";
+  timestamp: string;
 };
 
 export type Chat = {
-    id: string;
-    sellerId: string; 
-    lastMessage: string;
-    time: string;
-    messages: Message[];
+  id: string;
+  sellerId: string;
+  lastMessage: string;
+  time: string;
+  messages: Message[];
 };
 
 export type Seller = {
@@ -58,8 +58,6 @@ export type Seller = {
   image: string;
   href: string;
 };
-
-
 
 export type FooterLink = { label: string; href: string };
 

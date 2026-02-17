@@ -12,7 +12,7 @@ function HomeHeader() {
   const t = useTranslations("Header");
 
   return (
-    <header className="border-border max-h-[70px] h-[70px] bg-surface sticky top-0 z-40 border-b">
+    <header className="border-border bg-surface sticky top-0 z-40 h-[70px] max-h-[70px] border-b">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 p-3">
         {/* Logo */}
         <Logo />

@@ -4,20 +4,18 @@ import Link from "next/link";
 function HomeFooter() {
   return (
     <footer className="border-border bg-surface border-t pt-16 pb-24 transition duration-500 md:pb-16">
-      <div className="mx-auto grid max-w-[1280] grid-cols-1 gap-12 px-4 md:grid-cols-2 md:px-10 lg:grid-cols-4">
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 max-md:px-4 md:grid-cols-2 md:px-10 lg:grid-cols-4">
         {/* Brand */}
         <div>
           <Link href={"/"} className="mb-6 flex items-center gap-2">
             <div className="bg-primary text-text-inverse rounded p-1">
               <span className="material-symbols-outlined text-xl">package_2</span>
             </div>
-            <h2 className="dark:text-text-inverse text-xl font-extrabold text-[#181411]">
-              Minibaba
-            </h2>
+            <h2 className="text-text text-xl font-extrabold">Minibaba</h2>
           </Link>
 
           <p className="text-text-muted mb-6 text-sm">
-            O&apos;zbekistondagi eng yirik ulgurji savdo platformasi. Biz tadbirkorlar va zavodlarni
+            O'zbekistondagi eng yirik ulgurji savdo platformasi. Biz tadbirkorlar va zavodlarni
             bitta joyga jamlaymiz.
           </p>
 
