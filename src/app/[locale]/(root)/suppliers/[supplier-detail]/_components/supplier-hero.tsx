@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { BadgeCheck, MapPin, Star, Calendar, Zap, Plus, Mail } from "lucide-react";
 import { Supplier } from "@/types/product.type";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 type Props = {
   supplier: Supplier;
@@ -91,14 +92,16 @@ export function SupplierHero({ supplier, className, onFollow, onMessage }: Props
             {t("follow")}
           </Button>
 
-          <Button
-            type="button"
-            onClick={onMessage}
-            className="bg-primary shadow-primary/20 text-text-inverse flex-1 px-8 py-6 font-bold shadow-lg hover:opacity-90 lg:flex-none"
-          >
-            <Mail className="mr-2 h-4 w-4" />
-            {t("sendMessage")}
-          </Button>
+          <Link href={"/messages"}>
+            <Button
+              type="button"
+              onClick={onMessage}
+              className="bg-primary shadow-primary/20 text-text-inverse flex-1 px-8 py-6 font-bold shadow-lg hover:opacity-90 lg:flex-none"
+            >
+              <Mail className="mr-2 h-4 w-4" />
+              {t("sendMessage")}
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
