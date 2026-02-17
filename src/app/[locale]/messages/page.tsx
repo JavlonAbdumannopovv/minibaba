@@ -1,9 +1,9 @@
 "use client";
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 import { useChatStore } from "@/store/chatStore";
 import { verifiedSellers } from "@/constants";
-import { Send, Plus, Smile } from 'lucide-react';
-import ChatSidebar from './_components/sidebar';
+import { Send, Plus, Smile } from "lucide-react";
+import ChatSidebar from "./_components/sidebar";
 
 const ChatWindow = () => {
   const { chats, activeChatId, sendMessage } = useChatStore();
@@ -26,17 +26,14 @@ const ChatWindow = () => {
     }
   };
 
-  
-    return (
-      <div className="flex-1 h-full flex items-center justify-center bg-gray-50 font-bold">
-        <ChatSidebar />
-        <div className='w-full h-full md:flex hidden justify-center items-center'>
-            Suhbatni boshlash uchun chatni tanlang
-        </div>
+  return (
+    <div className="flex h-full flex-1 items-center justify-center bg-gray-50 font-bold">
+      <ChatSidebar />
+      <div className="hidden h-full w-full items-center justify-center md:flex">
+        Suhbatni boshlash uchun chatni tanlang
       </div>
-    );
-
-
+    </div>
+  );
 };
 
 export default ChatWindow;

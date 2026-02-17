@@ -4,7 +4,7 @@ import { Lock } from "lucide-react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { InputField } from "./input-field";
+import { InputField } from "../../../../components/fields/input-field";
 import { AuthValidation } from "@/validations/auth.validation";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";

@@ -63,7 +63,7 @@ export function StickyPurchaseBar({
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
-          <Link href={"/messages"} >
+          <Link href={"/messages"}>
             <Button variant="outline" className="rounded-lg" onClick={onChat}>
               <MessageCircle className="text-primary mr-2 h-4 w-4" />
               {t("chat")}

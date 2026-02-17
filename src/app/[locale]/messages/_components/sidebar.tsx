@@ -1,10 +1,9 @@
-"use client"
-import { verifiedSellers } from '@/constants'
-import { BadgeCheck, Edit, Verified, VerifiedIcon } from 'lucide-react'
-import ChatUser from './chatUser'
-import { useEffect } from 'react'
-import { useChatStore } from '@/store/chatStore'
-
+"use client";
+import { verifiedSellers } from "@/constants";
+import { Edit, Verified, VerifiedIcon } from "lucide-react";
+import ChatUser from "./chatUser";
+import { useEffect } from "react";
+import { useChatStore } from "@/store/chatStore";
 
 //   id: string;
 //   name: string;
@@ -16,33 +15,42 @@ import { useChatStore } from '@/store/chatStore'
 //   href: string;
 
 const ChatSidebar = () => {
-
-    return (
-        <div className='md:w-[380px] w-full h-full md:max-w-[380px] border-r border-l bg-white border-border'>
-            <div className='p-[16px] flex flex-col gap-[16px]'>
-                <div className='  flex justify-between items-center'>
-                    <div className='text-[18px] font-bold'>Inbox</div>
-                    <div><Edit className='text-[#F47B25]' /></div>
-                </div>
-                <div className='flex gap-[8px] justify-start items-center'>
-                    <div className={`w-[76px] h-[32px] bg-[#F47B25] flex justify-center items-center text-[12px] rounded-[9999px] text-white`}>All chats</div>
-                    <div className={`w-[76px] h-[32px] bg-[#F5F2F0] flex justify-center items-center text-[12px] rounded-[9999px] text-[#181411]`}>Unread</div>
-                    <div className={`max-w-[80px] px-6 h-[32px] bg-[#F5F2F0] flex justify-center items-center text-[12px] rounded-[9999px] text-[#181411]`}>
-                        <div className='p-0.5 rounded-full bg-blue-800 flex justify-center items-center mr-1'>
-                            <BadgeCheck className='w-3 h-3 text-white' />
-                        </div>
-                        Verified
-                    </div>
-                </div>
-            </div>
-
-            <div className='flex flex-col justify-center items-start'>
-                {verifiedSellers.map(seller => (
-                    <ChatUser seller={seller} key={seller.id} />
-                ))}
-            </div>
+  return (
+    <div className="border-border h-full w-full border-r border-l bg-white md:w-[380px] md:max-w-[380px]">
+      <div className="flex flex-col gap-[16px] p-[16px]">
+        <div className="flex items-center justify-between">
+          <div className="text-[18px] font-bold">Inbox</div>
+          <div>
+            <Edit className="text-[#F47B25]" />
+          </div>
         </div>
-    )
-}
+        <div className="flex items-center justify-start gap-[8px]">
+          <div
+            className={`flex h-[32px] w-[76px] items-center justify-center rounded-[9999px] bg-[#F47B25] text-[12px] text-white`}
+          >
+            All chats
+          </div>
+          <div
+            className={`flex h-[32px] w-[76px] items-center justify-center rounded-[9999px] bg-[#F5F2F0] text-[12px] text-[#181411]`}
+          >
+            Unread
+          </div>
+          <div
+            className={`flex h-[32px] w-[76px] items-center justify-center rounded-[9999px] bg-[#F5F2F0] text-[12px] text-[#181411]`}
+          >
+            {" "}
+            <VerifiedIcon className="mr-1 h-4 w-4 text-blue-800" /> Verified
+          </div>
+        </div>
+      </div>
 
-export default ChatSidebar
+      <div className="flex flex-col items-start justify-center">
+        {verifiedSellers.map((seller) => (
+          <ChatUser seller={seller} key={seller.id} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ChatSidebar;
