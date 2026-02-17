@@ -3,13 +3,16 @@ import { verifiedSellers } from "@/constants"
 import { useChatStore } from "@/store/chatStore"
 import { MoreVertical, Store, StoreIcon } from "lucide-react"
 import Image from "next/image"
+import { useParams } from "next/navigation"
 
 
 const ChatHeader = () => {
     const { activeChatId } = useChatStore()
-    const seller =  verifiedSellers.find(sel=>sel.id==activeChatId)
+    const params = useParams()
+    const seller =  verifiedSellers.find(sel=>sel.id==params.id)
+    console.log(seller, params.id)
     return (
-        <div className="md:px-[24px] px-3 bg-white max-h-[75px] h-[75px] py-[16px] w-full border-b border-border border-r">
+        <div className={`md:px-[24px] px-3 bg-white max-h-[75px] h-[75px] py-[16px] w-full border-b border-border border-r ${params.id ? "": "hidden"}`}>
             <div className="flex  w-full justify-between items-center" >
                 <div className="flex justify-start items-start gap-2">
                     {seller && <Image alt={seller?.name} src={seller?.image} width={48}  className="rounded-[8px]" height={48}/>} 

@@ -2,12 +2,10 @@
 
 import { useEffect, useState } from "react";
 import {
-  ChevronDown, ChevronUp, ChevronRight, Laptop, Factory,
-  Shirt, Home, Car, Heart, Trophy, Wrench, ShieldCheck
+  ChevronDown, ChevronUp
 } from "lucide-react";
 import { categories} from "@/constants";
-import { Breadcrumbs } from "@/components/shared/breadcrumbs";
-import { number } from "zod";
+
 import { Category } from "@/types";
 
 

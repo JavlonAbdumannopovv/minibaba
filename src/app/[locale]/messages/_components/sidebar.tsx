@@ -18,7 +18,7 @@ import { useChatStore } from '@/store/chatStore'
 const ChatSidebar = () => {
 
     return (
-        <div className='md:w-[380px] hidden md:block h-full max-w-[380px] border-r border-l bg-white border-border'>
+        <div className='md:w-[380px] w-full h-full md:max-w-[380px] border-r border-l bg-white border-border'>
             <div className='p-[16px] flex flex-col gap-[16px]'>
                 <div className='  flex justify-between items-center'>
                     <div className='text-[18px] font-bold'>Inbox</div>

@@ -1,6 +1,8 @@
-import { verifiedSellers } from '@/constants'
+"use client"
 import { useChatStore } from '@/store/chatStore'
 import { Seller } from '@/types'
+import { useRouter } from 'next/navigation'
+
 import React from 'react'
 
 type Props = {
@@ -9,9 +11,9 @@ type Props = {
 
 const ChatUser = ({ seller }: Props) => {
     const {setActiveChat, activeChatId} = useChatStore()
-    
+    const router = useRouter()
     return (
-        <div onClick={()=>setActiveChat(seller.id)} className={`p-[16px] w-full h-[80px] flex justify-start gap-3 items-center cursor-pointer transition-all ${activeChatId==seller.id ? "border-l-[#F47B25] border-l-4 bg-[#F47B251A] pl-[12px]" : "border-l-4 border-l-transparent"
+        <div onClick={()=>{setActiveChat(seller.id); router.push(`/messages/${seller.id}`)} } className={`p-[16px] w-full h-[80px] flex justify-start gap-3 items-center cursor-pointer transition-all ${activeChatId==seller.id ? "border-l-[#F47B25] border-l-4 bg-[#F47B251A] pl-[12px]" : "border-l-4 border-l-transparent"
             }`}>
 
             <div className='w-[48px] h-[48px] shrink-0'>

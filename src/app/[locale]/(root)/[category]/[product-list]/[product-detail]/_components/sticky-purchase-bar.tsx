@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { MessageCircle, Plus, Minus, ShoppingCart, FileText } from "lucide-react";
+import Link from "next/link";
 
 type Props = {
   totalLabel?: string; // optional override (agar kerak bo'lsa)
@@ -62,10 +63,12 @@ export function StickyPurchaseBar({
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
-          <Button variant="outline" className="rounded-lg" onClick={onChat}>
-            <MessageCircle className="text-primary mr-2 h-4 w-4" />
-            {t("chat")}
-          </Button>
+          <Link href={"/messages"} >
+            <Button variant="outline" className="rounded-lg" onClick={onChat}>
+              <MessageCircle className="text-primary mr-2 h-4 w-4" />
+              {t("chat")}
+            </Button>
+          </Link>
 
           <Button variant="outline" className="rounded-lg" onClick={onRfq}>
             <FileText className="text-muted-foreground mr-2 h-4 w-4" />

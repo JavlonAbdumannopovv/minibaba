@@ -13,13 +13,13 @@ export default function RootLayout({
         <div className="h-screen bg-bg">
             <HomeHeader />
             <div className="md:flex max-w-7xl  h-[calc(100vh-70px)]  mx-auto md:px-3 justify-start items-start">
-                <ChatSidebar />
+          
                 <div className="w-full h-full">
-                    <ChatHeader/>
+
                     {children}
                 </div>
             </div>
-            {/* <HomeFooter /> */}
+
         </div>
     );
 }
