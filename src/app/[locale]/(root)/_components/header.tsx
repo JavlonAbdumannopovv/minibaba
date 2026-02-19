@@ -29,14 +29,16 @@ function HomeHeader() {
             {/* Tillar */}
             <LanguageDropdown />
             {/* Savat */}
-            <button className="hover:text-primary relative flex cursor-pointer flex-col items-center gap-0.5 transition-colors">
-              <span className="material-symbols-outlined">shopping_cart</span>
-              <span className="text-[10px] font-bold">{t("shoppingCart")}</span>
-              {/* Badge */}
-              <span className="bg-primary text-text absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full text-[10px] font-bold">
-                0
-              </span>
-            </button>
+            <Link href="/cart">
+              <button className="hover:text-primary relative flex cursor-pointer flex-col items-center gap-0.5 transition-colors">
+                <span className="material-symbols-outlined">shopping_cart</span>
+                <span className="text-[10px] font-bold">{t("shoppingCart")}</span>
+                {/* Badge */}
+                <span className="bg-primary text-text absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full text-[10px] font-bold">
+                  0
+                </span>
+              </button>
+            </Link>
             {/* Kirish */}
             <Link href="/login">
               <button className="hover:text-primary text-text flex cursor-pointer flex-col items-center gap-0.5 transition-colors">

@@ -98,5 +98,19 @@
     "noProducts": "Нет товаров",
     "all": "Все",
     "companyAbout": "О компании"
+  },
+  "Cart": {
+    "title": "Корзина",
+    "productCount": "{count} товаров",
+    "description": "Просмотрите выбранные товары и оформите заказ",
+    "summaryTitle": "Сводка заказа",
+    "itemsLine": "Товары ({count} видов)",
+    "qtyUnit": "шт.",
+    "totalLabel": "Итого",
+    "checkoutButton": "Оформить заказ",
+    "unitPriceLabel": "Цена за единицу:",
+    "totalPriceLabel": "Общая цена:",
+    "selectAria": "{title} select",
+    "trustedSupplierBadge": "Доверенный поставщик"
   }
 }

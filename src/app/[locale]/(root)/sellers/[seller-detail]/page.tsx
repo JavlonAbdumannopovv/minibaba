@@ -13,7 +13,7 @@ import { useTranslations } from "next-intl";
 
 const STEP = 10;
 
-const SupplierDetailedPage = () => {
+const SellerDetailedPage = () => {
   const { visibleCount, isLoadingMore, hasMore, sentinelRef } = useInfiniteSlice(
     productsList.length,
     {
@@ -109,4 +109,4 @@ const SupplierDetailedPage = () => {
   );
 };
 
-export default SupplierDetailedPage;
+export default SellerDetailedPage;

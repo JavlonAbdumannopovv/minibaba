@@ -9,7 +9,7 @@ function formatUZS(value: number) {
 export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
-      href={`/products/${product.id}`}
+      href={`/products/category/${product.id}`}
       className="group bg-surface border-border block min-h-[410] overflow-hidden rounded-xl border transition-all hover:-translate-y-1 hover:shadow-xl"
     >
       {/* Image */}

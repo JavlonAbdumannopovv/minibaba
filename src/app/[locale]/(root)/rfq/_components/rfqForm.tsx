@@ -1,5 +1,5 @@
 "use client";
-import { Send } from "lucide-react"; 
+import { Send } from "lucide-react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -7,7 +7,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslations } from "next-intl";
 import { RfqValidation } from "@/validations/rfq.validation";
 import { InputField } from "./inputField";
-
 
 type RfqValues = z.infer<typeof RfqValidation.rfqSchema>;
 
@@ -28,7 +27,7 @@ const RfqForm = () => {
   };
 
   return (
-    <div className="bg-white  w-full  rounded-xl p-8 shadow-sm border border-gray-100">
+    <div className="w-full rounded-xl border border-gray-100 bg-white p-8 shadow-sm">
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <InputField
           label="Mahsulot nomi"
@@ -47,9 +46,9 @@ const RfqForm = () => {
 
           <div className="flex flex-col gap-2">
             <label className="text-sm font-semibold text-gray-700">O'lchov birligi</label>
-            <select 
+            <select
               {...register("unit")}
-              className="h-12 focus:border-primary focus:ring-primary/20 focus:ring-1 w-full rounded-lg border border-gray-300 px-4  focus:outline-none bg-white"
+              className="focus:border-primary focus:ring-primary/20 h-12 w-full rounded-lg border border-gray-300 bg-white px-4 focus:ring-1 focus:outline-none"
             >
               <option value="Dona">Dona</option>
               <option value="Kg">Kg</option>
@@ -58,40 +57,38 @@ const RfqForm = () => {
           </div>
         </div>
 
-
         <div className="flex flex-col gap-2">
           <label className="text-sm font-semibold text-gray-700">Yetkazib berish shahri</label>
-          <select 
+          <select
             {...register("city")}
-            className="h-12 w-auto rounded-lg border border-gray-300 px-4 text-gray-500 focus:outline-none focus:border-primary focus:ring-primary/20 focus:ring-1"
+            className="focus:border-primary focus:ring-primary/20 h-12 w-auto rounded-lg border border-gray-300 px-4 text-gray-500 focus:ring-1 focus:outline-none"
           >
             <option value="">Shaharni tanlang</option>
             <option value="tashkent">Toshkent</option>
             <option value="samarkand">Samarqand</option>
           </select>
-          {errors.city && <span className="text-red-500 text-xs">{errors.city.message}</span>}
+          {errors.city && <span className="text-xs text-red-500">{errors.city.message}</span>}
         </div>
 
-
         <div className="flex flex-col gap-2">
-          <label className="text-sm font-semibold text-gray-700">Izoh (Qo'shimcha ma'lumotlar)</label>
+          <label className="text-sm font-semibold text-gray-700">
+            Izoh (Qo'shimcha ma'lumotlar)
+          </label>
           <textarea
             {...register("comment")}
             placeholder="Maxsulot sifati, rangi va yetkazib berish muddatlari haqida batafsil ma'lumot yozing..."
-            className="min-h-[120px] w-full rounded-lg border border-gray-300 p-4 focus:border-primary focus:ring-primary/20 focus:ring-1 focus:outline-none"
+            className="focus:border-primary focus:ring-primary/20 min-h-[120px] w-full rounded-lg border border-gray-300 p-4 focus:ring-1 focus:outline-none"
           />
         </div>
 
-        
         <button
-          className="bg-[#f58220] hover:bg-[#e0751b] text-white flex h-14 w-full items-center justify-center rounded-lg text-lg font-bold transition-all shadow-md gap-2"
+          className="flex h-14 w-full items-center justify-center gap-2 rounded-lg bg-[#f58220] text-lg font-bold text-white shadow-md transition-all hover:bg-[#e0751b]"
           type="submit"
           disabled={isSubmitting}
         >
-          <Send className="w-5 h-5" />
+          <Send className="h-5 w-5" />
           {isSubmitting ? "Yuborilmoqda..." : "RFQ yuborish"}
         </button>
-
       </form>
     </div>
   );

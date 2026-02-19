@@ -1,5 +1,6 @@
 import { Category, Chat, FooterLink, HeroSlide, Product, ProductList, Seller } from "@/types";
 import { Store, Truck } from "lucide-react";
+import type { CartItem, CartSupplier } from "@/types/cart.type";
 
 export const navLinks = [
   { route: "all-categories", name: "categories" },
@@ -1022,5 +1023,55 @@ export const checkoutPaymentMethods = [
         className: "h-6",
       },
     ],
+  },
+];
+
+export const cartSuppliers: CartSupplier[] = [
+  { id: "sup-1", name: "Global Trade LLC", isTrusted: true },
+  { id: "sup-2", name: "Tashkent Textil" },
+];
+
+export const cartItemsSeed: CartItem[] = [
+  {
+    id: "item-1",
+    supplierId: "sup-1",
+    title: `Erkaklar sport poyabzali "Air Max Pro"`,
+    variantLabel: "Rang: Qizil | O'lcham: 42",
+    imageUrl:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBrsJRGWJOMppfEjbWW_0t08UcT1qLZS4xwJDNGe982ZT3uqhCDMUW_MpKLAVHjMkfK03txnRfwZ9kIzGOfB0EHqIRIMsL7dDrLUeNysvXeXB-xil4-goBpLbM_rfv1PPkwXeEmT-MlXW7hkeXVVcX2l2ZNnn0jYU3TCM9CZx9p079xryzN-_gjrxk1KA6hZJt3TWm-XYEF2Lm0k8JBT_Guv8Ohb3bHA6foDp1B6JJxqwWGqz5wkAAYln8V4SogodzohxfUfwuGujc",
+    unitPriceUZS: 45000,
+    qty: 10,
+    minQty: 10,
+    step: 1,
+    unitLabel: "dona",
+    selected: false,
+  },
+  {
+    id: "item-2",
+    supplierId: "sup-1",
+    title: "Paxtali futbolka (Premium Cotton)",
+    variantLabel: "Rang: Oq | O'lcham: XL",
+    imageUrl:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCWgwoeGG68CxKLkCQ4bUjIsBoah0asaeiKGLfGsvvz4FwGZD0otkBl-tb1RWrhDUA2Wwab8SE7jTU8R-qPHTheY6nFbfvM_oD7plXZ5t5zmpbbwy_jUc7mw7apDeelU3QBkUEpsPaEWQVLWh3G5kPMAqLQ54wRxmz3sHGZNdIX0WGreVqVKyasmtcAU0ZAu9rPXbyt_A3U3l3IWTaROZhXMDijWGuIiQeN85PqbmuyvHoBT0qGWOUU0zUhAve3fUn2Y3jwRy0AtDw",
+    unitPriceUZS: 12000,
+    qty: 10,
+    minQty: 10,
+    step: 1,
+    unitLabel: "dona",
+    selected: false,
+  },
+  {
+    id: "item-3",
+    supplierId: "sup-2",
+    title: "Satin matosi (Ko'k)",
+    variantLabel: "Zichligi: 140g/m² | Rulo: 50m",
+    imageUrl:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBgC3zExrj0lcDi2DytcujOZ3bTCNuRFHCrT-ZXhtMdBlZI0coV6vUJSy0dJj4zurhyun9AbwnxzIRHFVMP_mcBg-ixuZhgxa0jXrvwjz-3B4Kd5oY5kN5cjBX4f5z5L3LinE0SL56Bsj8yswSQQTYxnliLKLQv0Pjq-GTt8n5XPo2mB6R-U_N5nP3WvRHAZD_oNhGak55GWQeeIoYDAcYofqULKLZWlATx6n_TJZvSGUbaTC54YiHXE0F7PSkUFuQEQtCmxeDmuM4",
+    unitPriceUZS: 20000,
+    qty: 50,
+    minQty: 50,
+    step: 1,
+    unitLabel: "m",
+    selected: false,
   },
 ];

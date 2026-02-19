@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ShieldCheck } from "lucide-react";
 import { formatUZS } from "@/helper";
 import { CheckoutValues } from "@/types/checkout.type";
+import { useLocale } from "next-intl";
 
 type SummaryItem = {
   id: string;
@@ -129,7 +130,7 @@ function CheckoutSummary({ items, vatRate = 0.12 }: Props) {
           {/* submit */}
           <button
             type="submit"
-            className="bg-primary hover:bg-button-hover text-text-inverse shadow-primary/25 flex h-14 w-full cursor-pointer items-center justify-center gap-2 rounded-xl font-bold shadow-lg transition-all disabled:opacity-60"
+            className="bg-primary hover:bg-button-hover text-text-inverse shadow-primary/25 disabled:hover:bg-primary flex h-14 w-full cursor-pointer items-center justify-center gap-2 rounded-xl font-bold shadow-lg transition-all disabled:cursor-not-allowed disabled:opacity-60"
             disabled={!canSubmit}
           >
             <ShieldCheck className="h-5 w-5" />
@@ -154,7 +155,7 @@ function CheckoutSummary({ items, vatRate = 0.12 }: Props) {
         <div>
           <p className="text-xs font-bold">Minibaba Himoyasi</p>
           <p className="text-[10px]">
-            To&apos;lovingiz mahsulot yetib borguncha bizning hisobimizda xavfsiz saqlanadi.
+            To'lovingiz mahsulot yetib borguncha bizning hisobimizda xavfsiz saqlanadi.
           </p>
         </div>
       </div>

@@ -98,5 +98,19 @@
     "noProducts": "No products",
     "all": "All",
     "companyAbout": "About company"
+  },
+  "Cart": {
+    "title": "Cart",
+    "productCount": "{count} products",
+    "description": "Review selected products and place an order",
+    "summaryTitle": "Order summary",
+    "itemsLine": "Products ({count} types)",
+    "qtyUnit": "pcs",
+    "totalLabel": "Total",
+    "checkoutButton": "Place order",
+    "unitPriceLabel": "Unit price:",
+    "totalPriceLabel": "Total price:",
+    "selectAria": "{title} select",
+    "trustedSupplierBadge": "Trusted supplier"
   }
 }

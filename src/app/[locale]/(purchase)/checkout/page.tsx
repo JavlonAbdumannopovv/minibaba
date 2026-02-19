@@ -10,6 +10,8 @@ import CheckoutDeliveryOptions from "./_components/checkout-delivery-options";
 import CheckoutPaymentMethods from "./_components/checkout-payment-methods";
 import CheckoutSummary from "./_components/checkout-summary";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs";
+import { useOrderStore } from "@/store/orderStore";
+import { useCartStore } from "@/store/cartStore";
 
 type CheckoutValues = z.infer<typeof CheckoutValidation.schema>;
 
@@ -33,12 +35,22 @@ export default function CheckoutPage() {
     } as any,
   });
 
+  const buildDraft = useOrderStore((s) => s.buildDraft);
+  const clearDraft = useOrderStore((s) => s.clearDraft);
+  const clearSelected = useCartStore((s) => s.clearSelection);
+
   const onSubmit = (values: CheckoutValues) => {
+    const draft = buildDraft(values);
+
     // mana shu yerda hammasi bitta object bo'lib keladi
-    console.log("CHECKOUT:", values);
+    console.log("ORDER DRAFT:", draft);
+
+    // mock: submitdan keyin cartni tozalash (faqat selectedlarni)
+    clearSelected();
+
+    // keyin: API call / order create / payment redirect
 
     methods.reset();
-    // keyin: API call / order create / payment redirect
   };
 
   return (

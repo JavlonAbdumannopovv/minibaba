@@ -98,5 +98,19 @@
     "noProducts": "Mahsulot yo'q",
     "all": "Hammasi shu",
     "companyAbout": "Kompaniya haqida"
+  },
+  "Cart": {
+    "title": "Savat",
+    "productCount": "{count} mahsulot",
+    "description": "Tanlangan mahsulotlarni ko'rib chiqing va buyurtma bering",
+    "summaryTitle": "Buyurtma xulosasi",
+    "itemsLine": "Mahsulotlar ({count} turdagi)",
+    "qtyUnit": "dona",
+    "totalLabel": "Jami",
+    "checkoutButton": "Buyurtma berish",
+    "unitPriceLabel": "Birlik narxi:",
+    "totalPriceLabel": "Jami narx:",
+    "selectAria": "{title} select",
+    "trustedSupplierBadge": "Ishonchli yetkazib beruvchi"
   }
 }

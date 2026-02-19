@@ -18,7 +18,7 @@ export function InputField({
           type={type}
           placeholder={placeholder}
           className={[
-            "text-text outline-0 bg-bg border-border placeholder:text-text-muted/30 block h-12 w-full rounded-lg border pr-4 pl-[10]  font-medium transition-all",
+            "text-text bg-bg border-border placeholder:text-text-muted/30 block h-12 w-full rounded-lg border pr-4 pl-[10] font-medium outline-0 transition-all",
             "focus:border-primary focus:ring-primary/20 focus:ring-1",
             error ? "border-error focus:border-error focus:ring-error/20" : "",
           ].join(" ")}
