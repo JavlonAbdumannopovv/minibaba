@@ -21,6 +21,19 @@
     "goToLogin": "Перейти к входу",
     "send": "Отправить"
   },
+  "Home": {
+    "topProducts": "Топ товары",
+    "verifiedSellers": "Проверенные продавцы",
+    "productsForYou": "Товары, подобранные для вас",
+    "all": "Все",
+    "minOrder": "Минимальный заказ",
+    "verifiedSeller": "Проверенный продавец",
+    "experience": " лет опыта",
+    "reliability": "Надёжность",
+    "responseTime": "Время ответа",
+    "sellerPage": "Страница продавца",
+    "detailed": "Подробнее"
+  },
   "Header": {
     "help": "Помощь",
     "login": "Войти",

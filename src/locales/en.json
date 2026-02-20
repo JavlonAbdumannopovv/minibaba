@@ -21,6 +21,19 @@
     "goToLogin": "Go to login",
     "send": "Send"
   },
+  "Home": {
+    "topProducts": "Top products",
+    "verifiedSellers": "Verified sellers",
+    "productsForYou": "Products selected for you",
+    "all": "All",
+    "minOrder": "Minimum order",
+    "verifiedSeller": "Verified seller",
+    "experience": " years of experience",
+    "reliability": "Reliability",
+    "responseTime": "Response time",
+    "sellerPage": "Seller page",
+    "detailed": "Details"
+  },
   "Header": {
     "help": "Help",
     "login": "Login",

@@ -21,6 +21,19 @@
     "goToLogin": "Tizimga kirish",
     "send": "Yuborish"
   },
+  "Home": {
+    "topProducts": "Top mahsulotlar",
+    "verifiedSellers": "Tasdiqlangan sotuvchilar",
+    "productsForYou": "Siz uchun tanlangan mahsulotlar",
+    "all": "Hammasi",
+    "minOrder": "Minimal buyurtma",
+    "verifiedSeller": "Tasdiqlangan sotuvchi",
+    "experience": " yillik tajriba",
+    "reliability": "Ishonchlilik",
+    "responseTime": "Javob vaqti",
+    "sellerPage": "Sotuvchi sahifasi",
+    "detailed": "Batafsil"
+  },
   "Header": {
     "help": "Yordam",
     "login": "Kirish",

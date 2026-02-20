@@ -1,7 +1,6 @@
 "use client";
 
 import { topProducts } from "@/constants";
-import ProductCard from "@/components/cards/top-product-card";
 import Autoplay from "embla-carousel-autoplay";
 
 import {
@@ -14,12 +13,13 @@ import {
 import { useRef } from "react";
 import { ChartLine } from "lucide-react";
 import Link from "next/link";
+import RandomProductCard from "@/components/cards/random-product.card";
 import { useTranslations } from "next-intl";
 
-export default function TopProductsCarousel() {
+function RandomProductsCarousel() {
   const autoplay = useRef(
     Autoplay({
-      delay: 2000, // 3 sekundda bir aylansin
+      delay: 3500, // sekundda bir aylansin
       stopOnInteraction: true, // user bosganda to‘xtasin
       stopOnMouseEnter: true, // hover bo‘lsa to‘xtasin
     }),
@@ -32,7 +32,7 @@ export default function TopProductsCarousel() {
       <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
         <div className="flex items-center gap-2">
           <ChartLine className="text-primary" />
-          <h2 className="text-2xl font-extrabold">{t("topProducts")}</h2>
+          <h2 className="text-2xl font-extrabold">{t("productsForYou")}</h2>
         </div>
         <Link href={"/categories"}>
           <p className="text-primary text-sm font-medium transition duration-500 hover:underline">
@@ -55,7 +55,7 @@ export default function TopProductsCarousel() {
                 key={p.id}
                 className="basis-1/1 pl-3 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
               >
-                <ProductCard product={p} />
+                <RandomProductCard product={p} />
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -68,3 +68,5 @@ export default function TopProductsCarousel() {
     </section>
   );
 }
+
+export default RandomProductsCarousel;

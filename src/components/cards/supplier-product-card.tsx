@@ -5,6 +5,7 @@ import { Heart, Star, BadgeCheck } from "lucide-react";
 import type { ProductList } from "@/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 type Props = {
   product: ProductList;
@@ -16,6 +17,8 @@ export function SupplierProductCard({ product }: Props) {
 
   const segments = pathname.split("/").filter(Boolean);
   // ["uz", "elektronika", "kompyuter"]
+
+  const t = useTranslations("Home");
 
   return (
     <Link href={`${segments[2]}/${product.id}`}>
@@ -47,11 +50,13 @@ export function SupplierProductCard({ product }: Props) {
           {/* Bottom */}
           <div className="mt-auto">
             <p className="text-primary text-base font-bold md:text-lg">
-              {product.price.toLocaleString()} so’m
+              {product.price.toLocaleString()} sum
             </p>
 
             <div className="text-text-muted mt-1 flex items-center justify-between text-xs">
-              <span className="font-medium">Min. {product.moq} dona</span>
+              <span className="font-medium">
+                {t("minOrder")}: {product.moq}
+              </span>
               <span className="flex items-center gap-1">
                 <Star className="h-3 w-3 fill-current" />
                 {product.rating}

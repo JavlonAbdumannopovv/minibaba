@@ -36,7 +36,7 @@ const RfqForm = () => {
           error={errors.productName}
         />
 
-        <div className="md:grid flex flex-col grid-cols-2 gap-4">
+        <div className="flex grid-cols-2 flex-col gap-4 md:grid">
           <InputField
             label={t("form.quantityLabel")}
             type="number"
@@ -45,9 +45,7 @@ const RfqForm = () => {
           />
 
           <div className="flex flex-col gap-2">
-            <label className="text-sm font-semibold text-gray-700">
-              {t("form.unitLabel")}
-            </label>
+            <label className="text-sm font-semibold text-gray-700">{t("form.unitLabel")}</label>
             <select
               {...register("unit")}
               className="focus:border-primary focus:ring-primary/20 h-12 w-full rounded-lg border border-gray-300 bg-white px-4 focus:ring-1 focus:outline-none"
@@ -60,9 +58,7 @@ const RfqForm = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label className="text-sm font-semibold text-gray-700">
-            {t("form.cityLabel")}
-          </label>
+          <label className="text-sm font-semibold text-gray-700">{t("form.cityLabel")}</label>
           <select
             {...register("city")}
             className="focus:border-primary focus:ring-primary/20 h-12 w-auto rounded-lg border border-gray-300 px-4 text-gray-500 focus:ring-1 focus:outline-none"

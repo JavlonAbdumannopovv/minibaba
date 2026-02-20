@@ -7,7 +7,7 @@ function formatUZS(value: number) {
   return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " UZS";
 }
 
-export default function ProductCard({ product }: { product: Product }) {
+function RandomProductCard({ product }: { product: Product }) {
   const t = useTranslations("Home");
 
   return (
@@ -57,3 +57,5 @@ export default function ProductCard({ product }: { product: Product }) {
     </Link>
   );
 }
+
+export default RandomProductCard;

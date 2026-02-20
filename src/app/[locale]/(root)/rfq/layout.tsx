@@ -6,8 +6,8 @@ export default function RFQLayout({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <HomeHeader />
-      <div className="mx-auto max-w-7xl  px-3">{children}</div>
-      <HomeFooter/>
+      <div className="mx-auto max-w-7xl px-3">{children}</div>
+      <HomeFooter />
     </div>
   );
 }

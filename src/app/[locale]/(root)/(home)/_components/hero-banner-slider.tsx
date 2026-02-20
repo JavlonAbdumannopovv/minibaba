@@ -1,13 +1,12 @@
 "use client";
 
-import * as React from "react";
 import Link from "next/link";
-
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import type { CarouselApi } from "@/components/ui/carousel";
 import { heroSlides } from "@/constants";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function HeroBannerSlider() {
   const autoplay = useRef(
@@ -17,6 +16,8 @@ export default function HeroBannerSlider() {
       stopOnMouseEnter: true, // hover bo‘lsa to‘xtasin
     }),
   );
+
+  const t = useTranslations("Home");
 
   const [active, setActive] = useState(0);
 
@@ -48,22 +49,18 @@ export default function HeroBannerSlider() {
                     aria-label={slide.title}
                     role="img"
                   />
-
                   {/* Overlay */}
                   <div className="absolute inset-0 flex items-center bg-linear-to-r from-black/60 to-transparent px-8 md:px-16">
                     <div className="text-text-inverse max-w-md">
                       <span className="bg-primary mb-4 inline-block rounded px-3 py-1 text-xs font-bold tracking-wider uppercase">
                         {slide.tag}
                       </span>
-
                       <h2 className="mb-4 text-3xl leading-tight font-extrabold md:text-5xl">
                         {slide.title}
                       </h2>
-
                       <p className="mb-6 text-lg opacity-90">{slide.description}</p>
-
                       <button className="text-primary bg-surface hover:bg-primary hover:text-surface inline-flex rounded-lg px-8 py-3 font-bold transition-all duration-300">
-                        <Link href={slide.href}>Batafsil</Link>
+                        <Link href={slide.href}>{t("detailed")}</Link>
                       </button>
                     </div>
                   </div>
@@ -71,7 +68,6 @@ export default function HeroBannerSlider() {
               </CarouselItem>
             ))}
           </CarouselContent>
-
           {/* Dots */}
           <div className="absolute right-8 bottom-4 flex gap-2">
             {heroSlides.map((_: any, i: number) => (

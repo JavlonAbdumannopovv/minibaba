@@ -11,6 +11,7 @@ import {
 import { verifiedSellers } from "@/constants";
 import Autoplay from "embla-carousel-autoplay";
 import { ShieldPlus } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRef } from "react";
 
@@ -23,16 +24,18 @@ function VerifiedSellersCarousel() {
     }),
   );
 
+  const t = useTranslations("Home");
+
   return (
     <section className="space-y-4">
       <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
         <div className="flex items-center gap-2">
           <ShieldPlus className="text-primary" />
-          <h2 className="text-2xl font-extrabold">Tasdiqlangan sotuvchilar</h2>
+          <h2 className="text-2xl font-extrabold">{t("verifiedSellers")}</h2>
         </div>
         <Link href={"/sellers"}>
           <p className="text-primary text-sm font-medium transition duration-500 hover:underline">
-            Hammasi
+            {t("all")}
           </p>
         </Link>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "./_components/hero";
+import RandomProductsCarousel from "./_components/random-products-carousel";
 import VerifiedSellersCarousel from "./_components/sellers-carousel";
 // import Sidebar from "./_components/sidebar";
 import TopProductsCarousel from "./_components/top-products-carousel";
@@ -14,6 +15,7 @@ const HomePage = () => {
       </div>
       <TopProductsCarousel />
       <VerifiedSellersCarousel />
+      <RandomProductsCarousel />
     </div>
   );
 };
