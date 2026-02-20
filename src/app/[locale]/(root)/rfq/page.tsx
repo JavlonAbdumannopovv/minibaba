@@ -2,6 +2,7 @@ import React from "react";
 import TitleRFQ from "./_components/rfqTitle";
 import RfqForm from "./_components/rfqForm";
 import { Lightbulb } from "lucide-react";
+import RfqTable from "./_components/rfqTable";
 
 const page = () => {
   return (
@@ -68,7 +69,10 @@ const page = () => {
             </div>
           </div>
         </div>
+
+        
       </div>
+      <RfqTable/>
     </div>
   );
 };

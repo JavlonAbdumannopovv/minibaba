@@ -36,7 +36,7 @@ const RfqForm = () => {
           error={errors.productName}
         />
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="md:grid flex flex-col grid-cols-2 gap-4">
           <InputField
             label="Miqdor"
             type="number"
