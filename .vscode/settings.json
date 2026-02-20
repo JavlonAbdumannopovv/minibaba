@@ -7,7 +7,7 @@
   "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescript]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
   "[typescriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
-  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "vscode.json-language-features" },
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 

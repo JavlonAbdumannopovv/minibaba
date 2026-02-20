@@ -36,18 +36,14 @@
     "max": "Maks",
     "reset": "Qayta o'rnatish",
     "apply": "Qo'llash",
-
     "moq": "MOQ",
     "moqTitle": "MOQ (minimal buyurtma)",
-
     "rating": "Reyting",
     "ratingTitle": "Minimal reyting",
     "current": "Hozir",
-
     "region": "Hudud",
     "regionsTitle": "Hududlar",
     "selectedCount": "{count} ta",
-
     "countSuffix": "ta",
     "found": "mahsulot topildi",
     "all": "Hammasi shu"
@@ -112,5 +108,46 @@
     "totalPriceLabel": "Jami narx:",
     "selectAria": "{title} select",
     "trustedSupplierBadge": "Ishonchli yetkazib beruvchi"
+  },
+  "RFQ": {
+    "title": "RFQ Yuborish",
+    "description": "Bozordagi eng yaxshi narxlarni olish uchun batafsil so'rov qoldiring.",
+    "form": {
+      "productNameLabel": "Mahsulot nomi",
+      "productNamePlaceholder": "Masalan: Paxta matosi yoki Qurilish armaturasi",
+      "quantityLabel": "Miqdor",
+      "unitLabel": "O'lchov birligi",
+      "cityLabel": "Yetkazib berish shahri",
+      "cityPlaceholder": "Shaharni tanlang",
+      "descriptionLabel": "Izoh (Qo'shimcha ma'lumotlar)",
+      "descriptionPlaceholder": "Maxsulot sifati, rangi va yetkazib berish muddatlari haqida batafsil ma'lumot yozing...",
+      "submit": "RFQ yuborish"
+    },
+    "tips": {
+      "title": "Foydali maslahat",
+      "content": "Batafsil ma'lumot berilgan so'rovlar 50% ko'proq taklif oladi. Mahsulot o'lchamlari, materiali va sertifikat talablarini ko'rsatishni unutmang."
+    },
+    "howItWorks": {
+      "title": "Jarayon qanday ishlaydi?",
+      "step1": "So'rovnomani to'ldiring va yuboring.",
+      "step2": "Yetkazib beruvchilar sizga o'z narxlarini taklif qilishadi.",
+      "step3": "Eng yaxshi taklifni tanlang va shartnoma tuzing."
+    },
+    "logistics": {
+      "title": "Logistika xizmati",
+      "description": "Minibaba orqali yuklarni sug'urtalash"
+    },
+    "recentRequests": {
+      "title": "Yaqinda yuborilgan so'rovlar",
+      "viewAll": "Hammasini ko'rish",
+      "table": {
+        "product": "MAHSULOT",
+        "date": "SANA",
+        "offers": "TAKLIFLAR SONI",
+        "status": "STATUS",
+        "action": "AMAL",
+        "view": "Ko'rish"
+      }
+    }
   }
 }

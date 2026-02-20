@@ -30,22 +30,24 @@ const RfqForm = () => {
     <div className="w-full rounded-xl border border-gray-100 bg-white p-8 shadow-sm">
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <InputField
-          label="Mahsulot nomi"
-          placeholder="Masalan: Paxta matosi yoki Qurilish armaturasi"
+          label={t("form.productNameLabel")}
+          placeholder={t("form.productNamePlaceholder")}
           registration={register("productName")}
           error={errors.productName}
         />
 
         <div className="md:grid flex flex-col grid-cols-2 gap-4">
           <InputField
-            label="Miqdor"
+            label={t("form.quantityLabel")}
             type="number"
             registration={register("quantity", { valueAsNumber: true })}
             error={errors.quantity}
           />
 
           <div className="flex flex-col gap-2">
-            <label className="text-sm font-semibold text-gray-700">O'lchov birligi</label>
+            <label className="text-sm font-semibold text-gray-700">
+              {t("form.unitLabel")}
+            </label>
             <select
               {...register("unit")}
               className="focus:border-primary focus:ring-primary/20 h-12 w-full rounded-lg border border-gray-300 bg-white px-4 focus:ring-1 focus:outline-none"
@@ -58,25 +60,27 @@ const RfqForm = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label className="text-sm font-semibold text-gray-700">Yetkazib berish shahri</label>
+          <label className="text-sm font-semibold text-gray-700">
+            {t("form.cityLabel")}
+          </label>
           <select
             {...register("city")}
             className="focus:border-primary focus:ring-primary/20 h-12 w-auto rounded-lg border border-gray-300 px-4 text-gray-500 focus:ring-1 focus:outline-none"
           >
-            <option value="">Shaharni tanlang</option>
-            <option value="tashkent">Toshkent</option>
-            <option value="samarkand">Samarqand</option>
+            <option value="">{t("form.cityPlaceholder")}</option>
+            <option value="tashkent">Andijon</option>
+            <option value="samarkand">Toshkent</option>
           </select>
           {errors.city && <span className="text-xs text-red-500">{errors.city.message}</span>}
         </div>
 
         <div className="flex flex-col gap-2">
           <label className="text-sm font-semibold text-gray-700">
-            Izoh (Qo'shimcha ma'lumotlar)
+            {t("form.descriptionLabel")}
           </label>
           <textarea
             {...register("comment")}
-            placeholder="Maxsulot sifati, rangi va yetkazib berish muddatlari haqida batafsil ma'lumot yozing..."
+            placeholder={t("form.descriptionPlaceholder")}
             className="focus:border-primary focus:ring-primary/20 min-h-[120px] w-full rounded-lg border border-gray-300 p-4 focus:ring-1 focus:outline-none"
           />
         </div>
@@ -87,7 +91,7 @@ const RfqForm = () => {
           disabled={isSubmitting}
         >
           <Send className="h-5 w-5" />
-          {isSubmitting ? "Yuborilmoqda..." : "RFQ yuborish"}
+          {isSubmitting ? t("form.submitting") : t("form.submit")}
         </button>
       </form>
     </div>

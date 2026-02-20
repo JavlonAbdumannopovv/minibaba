@@ -36,18 +36,14 @@
     "max": "Max",
     "reset": "Reset",
     "apply": "Apply",
-
     "moq": "MOQ",
     "moqTitle": "MOQ (minimum order)",
-
     "rating": "Rating",
     "ratingTitle": "Minimum rating",
     "current": "Current",
-
     "region": "Region",
     "regionsTitle": "Regions",
     "selectedCount": "{count} items",
-
     "countSuffix": "pcs",
     "found": "products found",
     "all": "All"
@@ -112,5 +108,46 @@
     "totalPriceLabel": "Total price:",
     "selectAria": "{title} select",
     "trustedSupplierBadge": "Trusted supplier"
+  },
+  "RFQ": {
+    "title": "Send RFQ",
+    "description": "Leave a detailed request to get the best prices in the market.",
+    "form": {
+      "productNameLabel": "Product Name",
+      "productNamePlaceholder": "Example: Cotton fabric or Construction rebar",
+      "quantityLabel": "Quantity",
+      "unitLabel": "Unit of measurement",
+      "cityLabel": "Delivery city",
+      "cityPlaceholder": "Select a city",
+      "descriptionLabel": "Comment (Additional information)",
+      "descriptionPlaceholder": "Write in detail about product quality, color, and delivery terms...",
+      "submit": "Send RFQ"
+    },
+    "tips": {
+      "title": "Helpful Tip",
+      "content": "Requests with detailed information receive 50% more offers. Don't forget to specify product dimensions, material, and certification requirements."
+    },
+    "howItWorks": {
+      "title": "How the process works?",
+      "step1": "Fill out and submit the request form.",
+      "step2": "Suppliers will offer you their prices.",
+      "step3": "Choose the best offer and close the deal."
+    },
+    "logistics": {
+      "title": "Logistics Service",
+      "description": "Cargo insurance through Minibaba"
+    },
+    "recentRequests": {
+      "title": "Recently sent requests",
+      "viewAll": "View all",
+      "table": {
+        "product": "PRODUCT",
+        "date": "DATE",
+        "offers": "NUMBER OF OFFERS",
+        "status": "STATUS",
+        "action": "ACTION",
+        "view": "View"
+      }
+    }
   }
 }
