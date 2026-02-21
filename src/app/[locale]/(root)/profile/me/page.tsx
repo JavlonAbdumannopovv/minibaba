@@ -12,11 +12,23 @@ import {
     HelpCircle,
     Globe
 } from 'lucide-react';
-
-const AccountPage = () => {
+import {
+    Dialog,
+    DialogClose,
+    DialogContent,
+    DialogDescription,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle
+} from "@/components/ui/dialog"
+import { Button } from '@/components/ui/button';
+import { useState } from 'react';
+const AboutMePage = () => {
+    const [isOpen, setIsOpen] = useState(false)
     return (
         <>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+            <div className="grid grid-cols-2 md:grid-cols-4  gap-4">
                 {[
                     { icon: ShoppingBag, label: "Mening buyurtmalarim", desc: "3 ta faol buyurtma", color: "text-blue-500", bg: "bg-blue-50" },
                     { icon: Heart, label: "Sevimli mahsulotlar", desc: "12 ta mahsulot", color: "text-red-500", bg: "bg-red-50" },
@@ -33,7 +45,6 @@ const AccountPage = () => {
                 ))}
             </div>
 
-            {/* SOTUVCHI BANNERI */}
             <div className="relative bg-linear-to-r from-orange-500 to-orange-400 rounded-3xl p-8 overflow-hidden">
                 <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
                     <div className="text-white max-w-md">
@@ -46,20 +57,20 @@ const AccountPage = () => {
                         Boshlash
                     </button>
                 </div>
-                {/* Bezakli doiralar */}
+      
                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-2xl"></div>
             </div>
 
-            {/* PASTKI MA'LUMOTLAR */}
+ 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                {/* SHAXSIY MA'LUMOTLAR */}
+     
                 <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                     <div className="flex justify-between items-center mb-6">
                         <h3 className="font-bold text-gray-800 flex items-center gap-2">
                             <User size={18} className="text-orange-500" /> Shaxsiy ma'lumotlar
                         </h3>
-                        <button className="text-orange-500 text-sm font-medium hover:underline">O'zgartirish</button>
+                        <button onClick={()=>setIsOpen(true)} className="text-orange-500 text-sm font-medium hover:underline">O'zgartirish</button>
                     </div>
                     <div className="space-y-4">
                         <div>
@@ -83,7 +94,7 @@ const AccountPage = () => {
                     </div>
                 </div>
 
-                {/* SOZLAMALAR */}
+       
                 <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                     <h3 className="font-bold text-gray-800 flex items-center gap-2 mb-6">
                         <Settings size={18} className="text-orange-500" /> Sozlamalar
@@ -123,8 +134,29 @@ const AccountPage = () => {
                 </div>
 
             </div>
+
+            <Dialog open={isOpen} onOpenChange={setIsOpen} >
+                <form>
+                    <DialogContent className="sm:max-w-sm bg-white ">
+                        <DialogHeader>
+                            <DialogTitle>Edit profile</DialogTitle>
+                            <DialogDescription>
+                                Make changes to your profile here. Click save when you&apos;re
+                                done.
+                            </DialogDescription>
+                        </DialogHeader>
+                       
+                        <DialogFooter>
+                            <DialogClose asChild>
+                                <Button variant="outline">Cancel</Button>
+                            </DialogClose>
+                            <Button type="submit">Save changes</Button>
+                        </DialogFooter>
+                    </DialogContent>
+                </form>
+            </Dialog>
         </>
     );
 };
 
-export default AccountPage;
+export default AboutMePage;

@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
+import AboutMePage from './me/page';
 
 const AccountPage = () => {
     const router = useRouter()
@@ -9,7 +10,7 @@ const AccountPage = () => {
     }, [])
     return (
         <>
-            <AccountPage/> 
+            <AboutMePage/> 
         </>
     );
 };

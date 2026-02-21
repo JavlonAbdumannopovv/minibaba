@@ -25,7 +25,7 @@ const AccountPage = ({ children }: { children: React.ReactNode }) => {
     return (
         <>
             <HomeHeader />
-            <div className="min-h-screen bg-[#F8F9FA] p-4 md:p-8 font-sans">
+            <div className="min-h-screen max-w-7xl mx-auto   bg-[#F8F9FA] px-3 md:py-8 py-4 font-sans">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
 
                     <div className="lg:col-span-3 space-y-6">
@@ -60,7 +60,7 @@ const AccountPage = ({ children }: { children: React.ReactNode }) => {
                         </div>
                     </div>
 
-                    <div className="lg:col-span-9 space-y-6">
+                    <div className="lg:col-span-9  space-y-6">
                         {children}
                     </div>
                 </div>
