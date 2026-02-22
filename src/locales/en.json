@@ -162,5 +162,51 @@
         "view": "View"
       }
     }
+  },
+  "Profile": {
+    "cards": {
+      "orders": "My orders",
+      "ordersDesc": "3 active orders",
+      "favorites": "Favorite products",
+      "favoritesDesc": "12 products",
+      "addresses": "Addresses",
+      "addressesDesc": "2 saved addresses",
+      "payments": "Payment methods",
+      "paymentsDesc": "Humo, Uzcard linked"
+    },
+    "sellerBanner": {
+      "title": "Want to become a seller?",
+      "description": "Open your store on the Minibaba platform and start sales across Uzbekistan.",
+      "button": "Start"
+    },
+    "personalInfo": {
+      "title": "Personal Information",
+      "edit": "Edit",
+      "fullName": "Full Name",
+      "email": "Email",
+      "birthDate": "Birth Date",
+      "gender": "Gender",
+      "genderMale": "Male",
+      "genderFemale": "Female"
+    },
+    "settings": {
+      "title": "Settings",
+      "language": "Language",
+      "notifications": "Notifications",
+      "security": "Security",
+      "helpCenter": "Help Center"
+    },
+    "dialog": {
+      "title": "Edit profile",
+      "description": "Make changes to your profile here. Click save when you're done.",
+      "cancel": "Cancel",
+      "save": "Save changes"
+    }
+  },
+  "SubNavbar": {
+    "categories": "Categories",
+    "readyToShip": "Ready to Ship",
+    "personalProtection": "Personal Protective Equipment",
+    "tradeAssurance": "Trade Assurance"
   }
 }

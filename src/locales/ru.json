@@ -162,5 +162,51 @@
         "view": "Смотреть"
       }
     }
+  },
+  "Profile": {
+    "cards": {
+      "orders": "Мои заказы",
+      "ordersDesc": "3 активных заказа",
+      "favorites": "Избранные товары",
+      "favoritesDesc": "12 товаров",
+      "addresses": "Адреса",
+      "addressesDesc": "2 сохраненных адреса",
+      "payments": "Способы оплаты",
+      "paymentsDesc": "Humo, Uzcard привязаны"
+    },
+    "sellerBanner": {
+      "title": "Хотите стать продавцом?",
+      "description": "Откройте свой магазин на платформе Minibaba и начните продажи по всему Узбекистану.",
+      "button": "Начать"
+    },
+    "personalInfo": {
+      "title": "Личные данные",
+      "edit": "Изменить",
+      "fullName": "Ф.И.О",
+      "email": "Электронная почта",
+      "birthDate": "Дата рождения",
+      "gender": "Пол",
+      "genderMale": "Мужской",
+      "genderFemale": "Женский"
+    },
+    "settings": {
+      "title": "Настройки",
+      "language": "Язык / Til",
+      "notifications": "Уведомления",
+      "security": "Безопасность",
+      "helpCenter": "Центр помощи"
+    },
+    "dialog": {
+      "title": "Редактировать профиль",
+      "description": "Внесите изменения в свой профиль здесь. Нажмите сохранить, когда закончите.",
+      "cancel": "Отмена",
+      "save": "Сохранить изменения"
+    }
+  },
+  "SubNavbar": {
+    "categories": "Категории",
+    "readyToShip": "Готовы к отправке",
+    "personalProtection": "Средства индивидуальной защиты",
+    "tradeAssurance": "Торговая гарантия"
   }
 }

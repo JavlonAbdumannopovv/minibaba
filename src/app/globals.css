@@ -72,3 +72,12 @@
     font-family: var(--font-display), system-ui, sans-serif;
   }
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE va Edge */
+    scrollbar-width: none;  /* Firefox */
+}

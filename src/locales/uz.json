@@ -162,5 +162,51 @@
         "view": "Ko'rish"
       }
     }
+  },
+  "Profile": {
+    "cards": {
+      "orders": "Mening buyurtmalarim",
+      "ordersDesc": "3 ta faol buyurtma",
+      "favorites": "Sevimli mahsulotlar",
+      "favoritesDesc": "12 ta mahsulot",
+      "addresses": "Manzillar",
+      "addressesDesc": "2 ta saqlangan manzil",
+      "payments": "To'lov usullari",
+      "paymentsDesc": "Humo, Uzcard bog'langan"
+    },
+    "sellerBanner": {
+      "title": "Sotuvchi bo'lishni xohlaysizmi?",
+      "description": "Minibaba platformasida o'z do'koningizni oching va butun O'zbekiston bo'ylab sotuvlarni boshlang.",
+      "button": "Boshlash"
+    },
+    "personalInfo": {
+      "title": "Shaxsiy ma'lumotlar",
+      "edit": "O'zgartirish",
+      "fullName": "F.I.SH",
+      "email": "Elektron pochta",
+      "birthDate": "Tug'ilgan sana",
+      "gender": "Jinsi",
+      "genderMale": "Erkak",
+      "genderFemale": "Ayol"
+    },
+    "settings": {
+      "title": "Sozlamalar",
+      "language": "Til / Язык",
+      "notifications": "Bildirishnomalar",
+      "security": "Xavfsizlik",
+      "helpCenter": "Yordam markazi"
+    },
+    "dialog": {
+      "title": "Profilni tahrirlash",
+      "description": "Bu yerda profilingizga o'zgartirishlar kiriting. Tugatgandan so'ng saqlash tugmasini bosing.",
+      "cancel": "Bekor qilish",
+      "save": "Saqlash"
+    }
+  },
+  "SubNavbar": {
+    "categories": "Kategoriyalar",
+    "readyToShip": "Yetkazib berishga tayyor",
+    "personalProtection": "Shaxsiy himoya vositalari",
+    "tradeAssurance": "Savdo kafolati"
   }
 }
