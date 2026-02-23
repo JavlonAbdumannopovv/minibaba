@@ -16,15 +16,10 @@ const SidebarItem = ({ item }: Props) => {
     const router = useRouter();
     const pathname = usePathname(); 
 
-    const segments = pathname.split('/');
-    const basePath = `/${segments[1]}/${segments[2]}`; 
-
 
     const isActive = pathname.endsWith(item.path);
 
-    const handleNavigate = () => {
-        router.push(`${basePath}/${item.path}`);
-    };
+    
 
     return (
         <button
@@ -33,7 +28,7 @@ const SidebarItem = ({ item }: Props) => {
                     ? "bg-orange-50 text-orange-600 font-semibold" 
                     : "text-gray-500 hover:bg-gray-50"
             }`}
-            onClick={handleNavigate}
+            onClick={()=>router.push(item.path)}
         >
             <item.icon size={20} />
             <span>{item.label}</span>
