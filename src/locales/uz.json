@@ -43,6 +43,10 @@
     "search": "Qidirish"
   },
   "Filters": {
+    "filtersTitle": "Filtrlar",
+    "resetAll": "Hammasini tozalash",
+    "clear": "Tozalash",
+    "categories": "Kategoriyalar",
     "price": "Narx",
     "priceRange": "Narx oralig'i",
     "min": "Min",
@@ -56,10 +60,11 @@
     "current": "Hozir",
     "region": "Hudud",
     "regionsTitle": "Hududlar",
+    "location": "Joylashuv",
     "selectedCount": "{count} ta",
     "countSuffix": "ta",
     "found": "mahsulot topildi",
-    "all": "Hammasi shu"
+    "all": "Hammasi"
   },
   "ProductDetail": {
     "StickyBar": {

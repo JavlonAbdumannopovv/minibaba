@@ -78,22 +78,6 @@ function HeaderMobile() {
             </Link>
           </SheetClose>
         </div>
-
-        {/* Kategoriyalar */}
-        <aside className="bg-background col-span-3 block rounded-xl border p-4 shadow-sm lg:hidden">
-          <h3 className="mb-4 flex items-center gap-2 text-lg font-bold">
-            <span className="material-symbols-outlined text-primary">menu</span>
-            {t("categories")}
-          </h3>
-
-          <nav>
-            <ul className="space-y-1">
-              {categories.map((item) => (
-                <SidebarItem key={item.id} item={item} />
-              ))}
-            </ul>
-          </nav>
-        </aside>
       </SheetContent>
     </Sheet>
   );

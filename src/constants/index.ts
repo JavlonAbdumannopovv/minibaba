@@ -649,6 +649,7 @@ export const productsList: ProductList[] = [
     moq: 5,
     rating: 4.2,
     region: "Toshkent",
+    category: "Office PC",
   },
   {
     id: "pc-2",
@@ -659,6 +660,7 @@ export const productsList: ProductList[] = [
     moq: 1,
     rating: 4.8,
     region: "Samarqand",
+    category: "Gaming PC",
   },
   {
     id: "pc-3",
@@ -669,6 +671,7 @@ export const productsList: ProductList[] = [
     moq: 3,
     rating: 4.5,
     region: "Farg'ona",
+    category: "Office PC",
   },
   {
     id: "pc-4",
@@ -679,6 +682,7 @@ export const productsList: ProductList[] = [
     moq: 1,
     rating: 4.9,
     region: "Toshkent",
+    category: "Gaming PC",
   },
   {
     id: "pc-5",
@@ -689,6 +693,7 @@ export const productsList: ProductList[] = [
     moq: 10,
     rating: 3.9,
     region: "Andijon",
+    category: "Budget PC",
   },
   {
     id: "pc-6",
@@ -699,6 +704,7 @@ export const productsList: ProductList[] = [
     moq: 4,
     rating: 4.1,
     region: "Namangan",
+    category: "Office PC",
   },
   {
     id: "pc-7",
@@ -709,6 +715,7 @@ export const productsList: ProductList[] = [
     moq: 2,
     rating: 4.4,
     region: "Buxoro",
+    category: "Gaming PC",
   },
   {
     id: "pc-8",
@@ -719,6 +726,7 @@ export const productsList: ProductList[] = [
     moq: 1,
     rating: 4.7,
     region: "Toshkent",
+    category: "Workstation PC",
   },
   {
     id: "pc-9",
@@ -729,6 +737,7 @@ export const productsList: ProductList[] = [
     moq: 6,
     rating: 4.0,
     region: "Qo'qon",
+    category: "Mini PC",
   },
   {
     id: "pc-10",
@@ -739,7 +748,9 @@ export const productsList: ProductList[] = [
     moq: 2,
     rating: 4.3,
     region: "Samarqand",
+    category: "All-in-One PC",
   },
+
   {
     id: "pc-11",
     title: "Office PC i3 10-gen",
@@ -749,6 +760,7 @@ export const productsList: ProductList[] = [
     moq: 5,
     rating: 4.2,
     region: "Toshkent",
+    category: "Office PC",
   },
   {
     id: "pc-12",
@@ -759,6 +771,7 @@ export const productsList: ProductList[] = [
     moq: 1,
     rating: 4.8,
     region: "Samarqand",
+    category: "Gaming PC",
   },
   {
     id: "pc-13",
@@ -769,6 +782,7 @@ export const productsList: ProductList[] = [
     moq: 3,
     rating: 4.5,
     region: "Farg'ona",
+    category: "Office PC",
   },
   {
     id: "pc-14",
@@ -779,6 +793,7 @@ export const productsList: ProductList[] = [
     moq: 1,
     rating: 4.9,
     region: "Toshkent",
+    category: "Gaming PC",
   },
   {
     id: "pc-15",
@@ -789,6 +804,7 @@ export const productsList: ProductList[] = [
     moq: 10,
     rating: 3.9,
     region: "Andijon",
+    category: "Budget PC",
   },
   {
     id: "pc-16",
@@ -799,6 +815,7 @@ export const productsList: ProductList[] = [
     moq: 4,
     rating: 4.1,
     region: "Namangan",
+    category: "Office PC",
   },
   {
     id: "pc-17",
@@ -809,6 +826,7 @@ export const productsList: ProductList[] = [
     moq: 2,
     rating: 4.4,
     region: "Buxoro",
+    category: "Gaming PC",
   },
   {
     id: "pc-18",
@@ -819,6 +837,7 @@ export const productsList: ProductList[] = [
     moq: 1,
     rating: 4.7,
     region: "Toshkent",
+    category: "Workstation PC",
   },
   {
     id: "pc-19",
@@ -829,6 +848,7 @@ export const productsList: ProductList[] = [
     moq: 6,
     rating: 4.0,
     region: "Qo'qon",
+    category: "Mini PC",
   },
   {
     id: "pc-20",
@@ -839,6 +859,7 @@ export const productsList: ProductList[] = [
     moq: 2,
     rating: 4.3,
     region: "Samarqand",
+    category: "All-in-One PC",
   },
 ];
 

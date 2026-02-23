@@ -43,6 +43,10 @@
     "search": "Поиск"
   },
   "Filters": {
+    "filtersTitle": "Фильтры",
+    "resetAll": "Сбросить всё",
+    "clear": "Очистить",
+    "categories": "Категории",
     "price": "Цена",
     "priceRange": "Диапазон цен",
     "min": "Мин",
@@ -56,6 +60,7 @@
     "current": "Текущий",
     "region": "Регион",
     "regionsTitle": "Регионы",
+    "location": "Местоположение",
     "selectedCount": "{count} шт.",
     "countSuffix": "шт.",
     "found": "найдено товаров",

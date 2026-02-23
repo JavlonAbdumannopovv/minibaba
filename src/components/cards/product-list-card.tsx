@@ -16,7 +16,7 @@ export function ProductListCard({ product }: Props) {
   // ["uz", "elektronika", "kompyuter"]
 
   return (
-    <Link href={`${segments[2]}/${product.id}`}>
+    <Link href={`${segments[1]}/${product.id}`}>
       <div className="group bg-card flex cursor-pointer flex-col overflow-hidden rounded-xl shadow-sm transition-all duration-300 hover:shadow-xl">
         {/* Image */}
         <div className="bg-muted relative aspect-square overflow-hidden">

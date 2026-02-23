@@ -1,8 +1,5 @@
-
 const page = () => {
-  return (
-    <div>favourites</div>
-  )
-}
+  return <div>favourites</div>;
+};
 
-export default page
+export default page;

@@ -43,6 +43,10 @@
     "search": "Search"
   },
   "Filters": {
+    "filtersTitle": "Filters",
+    "resetAll": "Reset all",
+    "clear": "Clear",
+    "categories": "Categories",
     "price": "Price",
     "priceRange": "Price range",
     "min": "Min",
@@ -56,9 +60,10 @@
     "current": "Current",
     "region": "Region",
     "regionsTitle": "Regions",
-    "selectedCount": "{count} items",
-    "countSuffix": "pcs",
-    "found": "products found",
+    "location": "Location",
+    "selectedCount": "{count}",
+    "countSuffix": "items",
+    "found": "items found",
     "all": "All"
   },
   "ProductDetail": {
