@@ -30,7 +30,7 @@ function LanguageDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant={"outline"} size={"sm"}>
+        <Button variant={"outline"} size={"lg"}>
           <Languages />
           {lngs.find((lng) => lng.route === segments[0])?.label || "Til"}
         </Button>

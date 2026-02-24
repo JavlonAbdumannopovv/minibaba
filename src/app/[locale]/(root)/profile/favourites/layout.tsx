@@ -1,0 +1,15 @@
+import React from "react"
+import HomeHeader from "../../_components/header"
+
+type Props = {
+    children: React.ReactNode
+}
+const layout = ({children}:Props) => {
+  return (
+    <div>
+        {children}
+    </div>
+  )
+}
+
+export default layout

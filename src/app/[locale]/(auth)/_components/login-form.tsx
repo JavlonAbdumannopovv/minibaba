@@ -8,10 +8,12 @@ import { InputField } from "../../../../components/fields/input-field";
 import { AuthValidation } from "@/validations/auth.validation";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { useRouter } from "next/navigation";
 
 type LoginValues = z.infer<typeof AuthValidation.loginSchema>;
-
 const LoginForm = () => {
+  const router = useRouter()
+
   const {
     register,
     handleSubmit,
@@ -25,6 +27,7 @@ const LoginForm = () => {
 
   const onSubmit = async (values: LoginValues) => {
     console.log(values);
+    router.push("/profile/me")
   };
 
   return (

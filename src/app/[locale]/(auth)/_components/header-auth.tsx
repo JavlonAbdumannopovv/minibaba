@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const HeaderAuth = () => {
   return (
     <header className="border-border bg-surface flex h-[80] border-b">
-      <div className="max-width-7xl container mx-auto flex items-center justify-between">
+      <div className="max-w-7xl container mx-auto flex items-center justify-between">
         <div>
           <Logo />
         </div>

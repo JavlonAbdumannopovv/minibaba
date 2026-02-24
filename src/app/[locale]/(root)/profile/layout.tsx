@@ -19,6 +19,7 @@ const sidebarData = [
     { icon: ShoppingBag, label: "Buyurtmalarim", path: "/profile/my-orders" },
     { icon: Heart, label: "Sevimli mahsulotlar", path: "/profile/favourites" },
     { icon: MapPin, label: "Manzillarim", path: "/my-address" },
+    { icon: CreditCard, label: "To'lovlarim", path: "/profile/checkout" },
 ]
 
 const AccountPage = ({ children }: { children: React.ReactNode }) => {
