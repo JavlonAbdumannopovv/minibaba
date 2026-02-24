@@ -7,7 +7,7 @@ import OrderCardBox from "./_components/orderCardBox"
 
 const page = () => {
   return (
-    <div className="max-w-7xl mx-auto px-3 flex flex-col pb-[24px]">
+    <div className="max-w-7xl mx-auto px-3 flex flex-col g pb-[24px]">
         {/* <MyOrderBreadcrumbs/> */}
         <div className="mt-[24px]"><Breadcrumbs/></div>
         <MyOrderHeader/>

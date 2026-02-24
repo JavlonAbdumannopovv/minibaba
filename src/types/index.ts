@@ -65,8 +65,9 @@ export type Filters = {
   priceMin: number;
   priceMax: number;
   moqMin: number;
-  ratingMin: number; // 0..5
+  ratingMin: number;
   regions: string[];
+  categories: string[];
 };
 
 // Product-list item
@@ -79,4 +80,5 @@ export type ProductList = {
   moq: number;
   rating: number;
   region: string;
+  category: string;
 };

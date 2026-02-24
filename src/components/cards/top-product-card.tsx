@@ -12,7 +12,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <Link
-      href={`/products/category/${product.id}`}
+      href={`/product-list/${product.id}`}
       className="group bg-surface border-border block min-h-[410] overflow-hidden rounded-xl border transition-all hover:-translate-y-1 hover:shadow-xl"
     >
       {/* Image */}
