@@ -9,7 +9,6 @@ const sidebarData = [
     { icon: User, label: "Profil", active: true, path: "/me" },
     { icon: ShoppingBag, label: "Buyurtmalarim", path: "/profile/my-orders" },
     { icon: Heart, label: "Sevimli mahsulotlar", path: "/profile/favourites" },
-    // { icon: MapPin, label: "Manzillarim", path: "/my-address" },
     { icon: CreditCard, label: "To'lovlarim", path: "/profile/checkout" },
 ]
 
@@ -37,7 +36,7 @@ const AccountPage = ({ children }: { children: React.ReactNode }) => {
                     <Edit2 size={14} />
                   </button>
                 </div>
-                <h2 className="text-xl font-bold text-gray-800">Alisher Usmonov</h2>
+                <h2 className="text-xl font-bold text-gray-800">Alisher Rustamov</h2>
                 <p className="text-sm text-gray-400">+998 90 123 45 67</p>
                 <span className="mt-2 rounded-md bg-green-100 px-3 py-1 text-[10px] font-bold text-green-600 uppercase">
                   Tasdiqlangan
