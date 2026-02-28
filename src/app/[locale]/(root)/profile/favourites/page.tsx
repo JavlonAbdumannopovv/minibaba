@@ -7,7 +7,7 @@ import { productsList } from "@/constants"
 const page = () => {
   return (
     <div className="mx-auto max-w-7xl flex-wrap px-3">
-      <div className="mt-[24px]"><Breadcrumbs/></div>
+      {/* <div className="mt-[24px]"><Breadcrumbs/></div> */}
       <div className="lg:flex justify-between items-center">
         <div className="flex flex-col">
           <div className="text-[30px] text-[#0F172A] font-normal">Yoqtirgan maxsulorlarim</div>
@@ -16,7 +16,7 @@ const page = () => {
         
       </div>
       <div className="py-8">
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {productsList.map((p) => (
             <FavouriteCard key={p.id} product={p} />
           ))}

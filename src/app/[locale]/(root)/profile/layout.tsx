@@ -6,7 +6,7 @@ import HomeFooter from "@/components/footers/home-footer";
 import { usePathname } from "next/navigation";
 import SidebarItem from "./_components/sidebar.item";
 const sidebarData = [
-    { icon: User, label: "Profil", active: true, path: "/me" },
+    { icon: User, label: "Profil", active: true, path: "/profile/me" },
     { icon: ShoppingBag, label: "Buyurtmalarim", path: "/profile/my-orders" },
     { icon: Heart, label: "Sevimli mahsulotlar", path: "/profile/favourites" },
     { icon: CreditCard, label: "To'lovlarim", path: "/profile/checkout" },
@@ -16,7 +16,7 @@ const AccountPage = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
   const lastone = pathname.split("/").reverse()[0];
   console.log(lastone);
-  if (lastone == "me" || lastone == "profile") {
+  if (true) {
     return (
       <>
         <HomeHeader />
