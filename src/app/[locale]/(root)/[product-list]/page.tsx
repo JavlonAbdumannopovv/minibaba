@@ -122,7 +122,7 @@ export default function ProductListPage() {
             </Button>
           </SheetTrigger>
 
-          <SheetContent side="left" className="bg-surface w-[92vw] max-w-[360px] p-0">
+          <SheetContent side="left" className="bg-surface w-[92vw] max-w-90 p-0">
             <SheetHeader className="border-border border-b p-4">
               <SheetTitle>{t("filtersTitle")}</SheetTitle>
             </SheetHeader>
@@ -179,7 +179,7 @@ export default function ProductListPage() {
           {isLoadingMore ? (
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {Array.from({ length: 4 }).map((_, i) => (
-                <div key={i} className="bg-card h-[320px] animate-pulse rounded-xl border" />
+                <div key={i} className="bg-card h-80 animate-pulse rounded-xl border" />
               ))}
             </div>
           ) : null}
