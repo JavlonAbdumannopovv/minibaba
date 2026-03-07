@@ -36,10 +36,10 @@ const SubNavbar = () => {
             </div>
 
             <div className="hidden h-full cursor-pointer items-center justify-center px-6 text-[14px] font-medium text-[#1C1C1C] hover:text-[#F47B25] md:flex">
-              {t("readyToShip")}
+              {t("tender")}
             </div>
             <div className="hidden h-full cursor-pointer items-center justify-center px-6 text-[14px] font-medium text-[#1C1C1C] hover:text-[#F47B25] md:flex">
-              {t("personalProtection")}
+              {t("kgproducts")}
             </div>
             <div className="hidden h-full cursor-pointer items-center justify-center px-6 text-[14px] font-medium text-[#1C1C1C] hover:text-[#F47B25] md:flex">
               {t("tradeAssurance")}
@@ -49,7 +49,7 @@ const SubNavbar = () => {
 
         <div
           className={`no-scrollbar absolute top-[49px] left-0 w-full overflow-y-auto bg-white shadow-xl transition-all duration-300 ease-in-out ${
-            isOpen ? "max-h-[600px] border-t border-gray-100" : "max-h-0"
+            isOpen ? "max-h-180 border-t border-gray-100" : "max-h-0"
           }`}
         >
           <div className="mx-auto flex min-h-[500px] max-w-7xl bg-white px-3">

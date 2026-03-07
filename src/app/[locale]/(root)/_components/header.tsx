@@ -7,6 +7,7 @@ import LanguageDropdown from "@/components/shared/language-dropdown";
 import HeaderMobile from "@/components/mobile/header-mobile";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import ValuteDropdown from "@/components/shared/valute-dropdown";
 
 function HomeHeader() {
   const t = useTranslations("Header");
@@ -27,6 +28,7 @@ function HomeHeader() {
           </div>
           <div className="flex items-center gap-4">
             {/* Tillar */}
+            <ValuteDropdown />
             <LanguageDropdown />
             {/* Savat */}
             <Link href="/cart">

@@ -3,7 +3,7 @@ import { Store, Truck } from "lucide-react";
 import type { CartItem, CartSupplier } from "@/types/cart.type";
 
 export const navLinks = [
-  { route: "all-categories", name: "categories" },
+  // { route: "all-categories", name: "categories" },
   { route: "support", name: "help" },
 ];
 

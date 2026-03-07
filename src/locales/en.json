@@ -210,8 +210,8 @@
   },
   "SubNavbar": {
     "categories": "Categories",
-    "readyToShip": "Ready to Ship",
-    "personalProtection": "Personal Protective Equipment",
+    "tender": "Tender",
+    "kgproducts": "Weight-based products",
     "tradeAssurance": "Trade Assurance"
   }
 }

@@ -210,8 +210,8 @@
   },
   "SubNavbar": {
     "categories": "Категории",
-    "readyToShip": "Готовы к отправке",
-    "personalProtection": "Средства индивидуальной защиты",
+    "tender": "Тендер",
+    "kgproducts": "Весовые товары"  ,
     "tradeAssurance": "Торговая гарантия"
   }
 }

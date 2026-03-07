@@ -210,8 +210,8 @@
   },
   "SubNavbar": {
     "categories": "Kategoriyalar",
-    "readyToShip": "Yetkazib berishga tayyor",
-    "personalProtection": "Shaxsiy himoya vositalari",
+    "tender": "Tender",
+    "kgproducts": "Kilogramlik mahsulotlar",
     "tradeAssurance": "Savdo kafolati"
   }
 }
